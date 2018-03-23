@@ -233,8 +233,8 @@ section {
 
 @media only screen and (min-width: 1200px) {
     .main-content {
-        padding: 80px 40px 40px 0;
         border-right: 1px solid #eee;
+        padding: 80px 40px 40px 0;
     }
 }
 
