@@ -5,6 +5,7 @@ html {
 
 /* Body */
 body {
+    background: #fcfcf7;
     color: #000;
     font: normal 300 1.6rem/2.8rem 'Merriweather', Arial, serif;
 }
@@ -12,7 +13,7 @@ body {
 /* Heading elements */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', Arial, sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0 0 2rem 0;
 }
 
