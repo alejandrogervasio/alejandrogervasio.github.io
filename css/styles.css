@@ -261,12 +261,12 @@ aside {
 }
 
 .post-title a:link, .post-title a:visited, .post-title a:active, .post-title a:focus {
-    color: #000;
+    color: #006abe;
     transition: 0.3s;
 }
 
 .post-title a:hover {
-    color: #006abe;
+    color: #00b0ff;
     text-decoration: none;
 }
 
