@@ -400,8 +400,8 @@ ul.featured-posts li {
     margin-bottom: 1rem;
 }
 
-.featured-post-date {
-    color: #000;
+.featured-post-category {
+    margin-left: 10px;
 }
 
 /* Categories */
