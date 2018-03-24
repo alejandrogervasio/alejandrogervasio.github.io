@@ -58,7 +58,7 @@ a:link, a:visited, a:active, a:focus {
 }
 
 a:hover {
-    color: #00b0ff;
+    color: #00ccff;
 }
 
 /* Responsive images */
@@ -112,7 +112,7 @@ nav ul.main-navigation li a:link, nav ul.main-navigation li a:visited, nav ul.ma
 }
 
 nav ul.main-navigation li a:hover {
-    color: #0DD7F0;
+    color: #00ccff;
 }
 
 nav ul.social-media-navigation {
@@ -266,7 +266,7 @@ aside {
 }
 
 .post-title a:hover {
-    color: #00b0ff;
+    color: #00ccff;
     text-decoration: none;
 }
 
@@ -398,8 +398,9 @@ ul.featured-posts li {
     margin-bottom: 1rem;
 }
 
-.featured-post-meta {
+.featured-post-date {
     color: #000;
+    margin-right: 10px;
 }
 
 /* Categories */
