@@ -296,8 +296,8 @@ aside {
 }
 
 .post-author {
+    font-weight: 700;
     position: relative;
-    margin-right: 10px;
 }
 
 /*
@@ -313,7 +313,8 @@ aside {
 }
 */
 .post-date {
-    margin-right: 10px;
+    font-weight: 700;
+    margin-left: 10px;
     position: relative;
 }
 
@@ -332,7 +333,8 @@ aside {
 
 */
 .post-category {
-    margin-right: 10px;
+    font-weight: 700; 
+    margin-left: 10px;
     position: relative;
 }
 
@@ -400,7 +402,6 @@ ul.featured-posts li {
 
 .featured-post-date {
     color: #000;
-    margin-right: 10px;
 }
 
 /* Categories */
@@ -481,5 +482,5 @@ footer ul.social-media-navigation li {
 }
 
 .btn:hover {
-    background: #00b0ff !important;
+    background: #00ccff !important;
 }
