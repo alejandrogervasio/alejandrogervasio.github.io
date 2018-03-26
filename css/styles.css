@@ -151,35 +151,35 @@ nav ul.social-media-navigation li {
     background: transparent url("../images/github-icon-rounded.png") 0 0 no-repeat;
 }
 
-.square-icon {
+.squared-icon {
     display: inline-table;
     width: 48px;
     height: 48px;
 }
 
-.square-icon:hover {
+.squared-icon:hover {
     background-position-x: -48px;
 }
 
-.square-twitter-icon {
-    background: transparent url("../images/twitter-icon-square.png") 0 0 no-repeat;
+.squared-twitter-icon {
+    background: transparent url("../images/twitter-icon-squared.png") 0 0 no-repeat;
 
 }
 
-.square-facebook-icon {
-    background: transparent url("../images/facebook-icon-square.png") 0 0 no-repeat;
+.squared-facebook-icon {
+    background: transparent url("../images/facebook-icon-squared.png") 0 0 no-repeat;
 }
 
-.square-linkedin-icon {
-    background: transparent url("../images/linkedin-icon-square.png") 0 0 no-repeat;
+.squared-linkedin-icon {
+    background: transparent url("../images/linkedin-icon-squared.png") 0 0 no-repeat;
 }
 
-.square-googleplus-icon {
-    background: transparent url("../images/googleplus-icon-square.png") 0 0 no-repeat;
+.squared-googleplus-icon {
+    background: transparent url("../images/googleplus-icon-squared.png") 0 0 no-repeat;
 }
 
-.square-github-icon {
-    background: transparent url("../images/github-icon-square.png") 0 0 no-repeat;
+.squared-github-icon {
+    background: transparent url("../images/github-icon-squared.png") 0 0 no-repeat;
 }
 
 /* Sections */
