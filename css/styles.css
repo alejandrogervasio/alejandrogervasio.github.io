@@ -6,7 +6,7 @@ html {
 /* Body */
 body {
     color: #000;
-    font: normal 300 1.6rem/2.8rem 'Merriweather', Arial, serif;
+    font: normal 300 1.8rem/2.8rem 'Roboto', Arial, serif;
 }
 
 /* Heading elements */
@@ -262,7 +262,7 @@ aside {
 }
 
 .post-title a:link, .post-title a:visited, .post-title a:active, .post-title a:focus {
-    color: #006abe;
+    color: #000;
     transition: 0.3s;
 }
 
@@ -283,7 +283,7 @@ aside {
 }
 
 .post-intro {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 2.8rem;
 }
 
@@ -394,11 +394,18 @@ ul.featured-posts li {
 }
 
 .featured-post-title {
-    color: #000;
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 2.6rem;
     margin-bottom: 1rem;
+}
+
+.featured-post-title a:link, .featured-post-title a:visited, .featured-post-title a:focus, .featured-post-title a:visited {
+    color: #006abe;
+}
+
+.featured-post-title a:hover {
+    color: #00ccff;
 }
 
 .featured-post-category {
