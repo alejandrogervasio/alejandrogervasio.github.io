@@ -289,15 +289,15 @@ aside {
 
 .post-meta {
     background: #eef2ff;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    line-height: 2.6rem;
+    line-height: 2.8rem;
     margin: -1rem 0 2rem 0;
     padding: 40px 20px 40px 20px;
 }
 
 .post-author {
-    font-weight: 700;
+    font-weight: 500;
     position: relative;
 }
 
@@ -314,7 +314,7 @@ aside {
 }
 */
 .post-date {
-    font-weight: 700;
+    font-weight: 500;
     margin-left: 10px;
     position: relative;
 }
@@ -334,7 +334,7 @@ aside {
 
 */
 .post-category {
-    font-weight: 700; 
+    font-weight: 500; 
     margin-left: 10px;
     position: relative;
 }
@@ -424,8 +424,9 @@ ul.categories li {
     margin: 0 0 1rem 0;
 }
 
-.categories a:link, .categories a:visited, .categories a:active, .categories a:focus {
+.categories a:link, .categories a:focus, .categories a:visited, .categories a:active {
     color: #006abe;
+    font-weight: 500;
 }
 
 .categories a:hover {
@@ -464,6 +465,7 @@ footer ul.copyrightinfo li:last-child {
 
 footer ul.social-media-navigation {
     list-style: none;
+    margin-top: 10px;
 }
 
 footer ul.social-media-navigation li {
