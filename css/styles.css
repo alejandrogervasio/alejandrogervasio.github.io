@@ -524,10 +524,10 @@ footer ul.social-media-navigation li {
     background: #006abe !important;
     color: #fff !important;
     display: inline-table;
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 1.6rem !important;
+    font-family: 'Lato', Arial, sans-serif !important;
+    font-size: 1.8rem !important;
     font-weight: 400 !important;
-    line-height: 2.6rem;
+    line-height: 2.8rem;
     padding: 10px 20px 10px 20px;
     text-decoration: none !important;
 }
