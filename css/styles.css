@@ -489,7 +489,7 @@ footer ul.copyrightinfo li {
     border-right: 1px solid #fff;
     color: #fff;
     float: left; 
-   margin-right: 15px;
+    margin-right: 15px;
     padding-right: 20px;
 }
 
@@ -520,7 +520,7 @@ footer ul.social-media-navigation li {
 
 /* Buttons */
 .btn {
-    background: #29587a !important;
+    background: #006abe !important;
     color: #fff !important;
     display: inline-table;
     font-family: 'Roboto', Arial, sans-serif;
@@ -532,5 +532,5 @@ footer ul.social-media-navigation li {
 }
 
 .btn:hover {
-    background: #00ccff !important;
+    background: #000 !important;
 }
