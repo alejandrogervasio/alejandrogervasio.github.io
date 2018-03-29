@@ -10,13 +10,12 @@ html {
 
 /* Body */
 body {
-    color: #000;
-    font: normal 300 1.8rem/2.8rem 'Roboto', Arial, serif;
+    color: #666;
+    font: normal 400 1.8rem/2.8rem 'Roboto', Arial, serif;
 }
 
 /* Heading elements */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', Arial, sans-serif;
     font-weight: 700;
     margin: 0 0 2rem 0;
 }
@@ -32,8 +31,8 @@ h2 {
 }
 
 h3 {
-    font-size: 2.8rem;
-    line-height: 3.8rem;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
 }
 
 h4 {
@@ -109,9 +108,8 @@ nav ul.main-navigation li {
 
 nav ul.main-navigation li a:link, nav ul.main-navigation li a:visited, nav ul.main-navigation li a:active, nav ul.main-navigation li a:focus {
     color: #fff;
-    font: normal 400 1.8rem/2.8rem 'Roboto', Arial, sans-serif;
     display: block;
-    font-weight: 400;
+    font-weight: 500;
     padding: 10px 0 10px 0;
     text-decoration: none;
 }
@@ -197,7 +195,7 @@ section {
     border-bottom: 1px solid #000;
     color: #000;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 2.6rem;
     margin: 0 0 2rem 0;
     padding-bottom: 1rem;
@@ -295,14 +293,14 @@ aside {
 .post-meta {
     background: #fafafa;
     font-size: 1.8rem;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 2.8rem;
     margin: -1rem 0 2rem 0;
     padding: 40px 20px 40px 20px;
 }
 
 .post-author {
-    font-weight: 500;
+    font-weight: 700;
     position: relative;
 }
 
@@ -319,7 +317,7 @@ aside {
 }
 */
 .post-date {
-    font-weight: 500;
+    font-weight: 700;
     margin-left: 10px;
     position: relative;
 }
@@ -339,7 +337,7 @@ aside {
 
 */
 .post-category {
-    font-weight: 500; 
+    font-weight: 700; 
     margin-left: 10px;
     position: relative;
 }
@@ -380,6 +378,7 @@ aside {
 /* Biography */
 .biography-title {
     font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .biography-img {
@@ -400,7 +399,7 @@ ul.featured-posts li {
 
 .featured-post-title {
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 2.6rem;
     margin-bottom: 1rem;
 }
@@ -451,10 +450,9 @@ footer ul.copyrightinfo {
 
 footer ul.copyrightinfo li {
     border-right: 1px solid #fff;
-    font: normal 400 1.8rem/2.8rem 'Roboto', Arial, sans-serif;
     color: #fff;
-    float: left;
-    margin-right: 15px;
+    float: left; 
+   margin-right: 15px;
     padding-right: 20px;
 }
 
