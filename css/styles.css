@@ -74,7 +74,7 @@ a:hover {
 /* Container (centers wrapped elements) */
 .container {
     margin: 0 auto;
-    width: 65%;
+    width: 70%;
 }
 
 /* Logo */
@@ -115,7 +115,7 @@ nav ul.main-navigation li a:link, nav ul.main-navigation li a:visited, nav ul.ma
 }
 
 nav ul.main-navigation li a:hover {
-    color: #00ccff;
+    color: #eee;
 }
 
 nav ul.social-media-navigation {
@@ -522,14 +522,16 @@ footer ul.social-media-navigation li {
 /* Buttons */
 .btn {
     background: #006abe !important;
+    border-radius: 4px;
     color: #fff !important;
     display: inline-table;
     font-family: 'Lato', Arial, sans-serif !important;
-    font-size: 1.8rem !important;
+    font-size: 1.6rem !important;
     font-weight: 400 !important;
-    line-height: 2.8rem;
+    line-height: 2.6rem;
     padding: 10px 20px 10px 20px;
     text-decoration: none !important;
+    text-transform: uppercase !important;
 }
 
 .btn:hover {
