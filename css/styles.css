@@ -93,13 +93,11 @@ nav ul.main-navigation {
     margin: 15px 0;
 }
 
-/*
 @media only screen and (min-width: 1200px) {
     nav ul.main-navigation {
-        margin: 25px 0 0 20px;
+        margin: 15px 0 0 50px;
     }
 }
-*/
 
 nav ul.main-navigation li {
     float: left;
@@ -109,13 +107,13 @@ nav ul.main-navigation li {
 nav ul.main-navigation li a:link, nav ul.main-navigation li a:visited, nav ul.main-navigation li a:active, nav ul.main-navigation li a:focus {
     color: #fff;
     display: block;
-    font-weight: 500;
+    font-weight: 700;
     padding: 10px 0 10px 0;
     text-decoration: none;
 }
 
 nav ul.main-navigation li a:hover {
-    color: #eee;
+    color: #00ccff;
 }
 
 nav ul.social-media-navigation {
