@@ -31,8 +31,8 @@ h2 {
 }
 
 h3 {
-    font-size: 3.5rem;
-    line-height: 4.5rem;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
 }
 
 h4 {
@@ -252,7 +252,7 @@ aside {
 }
 
 /* Posts */
-.post-intro {
+.post-intro, .post {
     border-bottom: 1px solid #eee;
     padding-bottom: 40px;
     margin-bottom: 40px;
@@ -272,7 +272,7 @@ aside {
     text-decoration: underline;
 }
 
-.post-intro-meta {
+.post-intro-meta, .post-meta {
     color: #a09e9e;
     font-size: 1.6rem;
     font-weight: 400;
@@ -281,33 +281,41 @@ aside {
     margin: 0 0 2rem 0;
 }
 
-.post-intro-meta ul.social-media-navigation {
+.post-intro-meta ul.social-media-navigation, .post-meta ul.social-media-navigation {
     list-style: none;
     margin: 0 0 2rem 0;
     overflow: hidden;
 }
 
-.post-intro-meta ul.social-media-navigation li {
+.post-intro-meta ul.social-media-navigation li, .post-meta ul.social-media-navigation li {
     float: left;
     margin-right: 10px;
 }
 
-.post-intro-author {
+.post-intro-author, post-author {
     margin-right: 10px
 }
 
-.post-intro-author a:link, .post-intro-author a:visited, .post-intro-author a:active, .post-intro-author a:focus {
+.post-intro-author a:link, 
+.post-intro-author a:visited, 
+.post-intro-author a:active, 
+.post-intro-author a:focus,
+.post-author a:link, 
+.post-author a:visited, 
+.post-author a:active, 
+.post-author a:focus {
     color: #a09e9e;
     text-decoration: underline;
 }
 
-.post-intro-author a:hover {
+.post-intro-author a:hover, .post-author a:hover {
     text-decoration: none;
 }
 
-.post-intro-image {
+.post-intro-image, .post-image {
     margin-bottom: 2rem;
 }
+
 /*
 .post-author:before {
     content: "\f007";
@@ -320,7 +328,7 @@ aside {
     left: 0;
 }
 */
-.post-intro-date {
+.post-intro-date, .post-date {
     margin-right: 10px;
     position: relative;
 }
@@ -339,16 +347,23 @@ aside {
 }
 */
 
-.post-intro-category {
+.post-intro-category, .post-category {
     position: relative;
 }
 
-.post-intro-category a:link, .post-intro-category a:visited, .post-intro-category a:active, .post-intro-category a:focus {
+.post-intro-category a:link, 
+.post-intro-category a:visited, 
+.post-intro-category a:active, 
+.post-intro-category a:focus,
+.post-category a:link, 
+.post-category a:visited, 
+.post-category a:active, 
+.post-category a:focus {
     color: #a09e9e;
     text-decoration: underline;
 }
 
-.post-intro-category a:hover {
+.post-intro-category a:hover, .post-category a:hover {
     text-decoration: none;
 }
 
@@ -385,15 +400,6 @@ aside {
 }
 */
 
-.post {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
-}
-
-.post-title {
-    margin: 0 0 3rem 0;
-}
 
 /* Biography */
 .biography-title a:link, .biography-title a:visited, .biography-title a:focus, .biography-title a:focus {
