@@ -252,27 +252,27 @@ aside {
 }
 
 /* Posts */
-.post {
+.post-intro {
     border-bottom: 1px solid #eee;
     padding-bottom: 40px;
     margin-bottom: 40px;
 }
 
-.post-title {
+.post-intro-title {
     margin: 0 0 3rem 0;
 }
 
-.post-title a:link, .post-title a:visited, .post-title a:active, .post-title a:focus {
+.post-intro-title a:link, .post-intro-title a:visited, .post-intro-title a:active, .post-intro-title a:focus {
     color: #000;
     text-decoration: none;
     transition: 0.3s;
 }
 
-.post-title a:hover {
+.post-intro-title a:hover {
     text-decoration: underline;
 }
 
-.post-meta {
+.post-intro-meta {
     color: #a09e9e;
     font-size: 1.6rem;
     font-weight: 400;
@@ -281,31 +281,31 @@ aside {
     margin: 0 0 2rem 0;
 }
 
-.post-meta ul.social-media-navigation {
+.post-intro-meta ul.social-media-navigation {
     list-style: none;
     margin: 0 0 2rem 0;
     overflow: hidden;
 }
 
-.post-meta ul.social-media-navigation li {
+.post-intro-meta ul.social-media-navigation li {
     float: left;
     margin-right: 10px;
 }
 
-.post-author {
+.post-intro-author {
     margin-right: 10px
 }
 
-.post-author a:link, .post-author a:visited, .post-author a:active, .post-author a:focus {
+.post-intro-author a:link, .post-intro-author a:visited, .post-intro-author a:active, .post-intro-author a:focus {
     color: #a09e9e;
     text-decoration: underline;
 }
 
-.post-author a:hover {
+.post-intro-author a:hover {
     text-decoration: none;
 }
 
-.post-image {
+.post-intro-image {
     margin-bottom: 2rem;
 }
 /*
@@ -320,7 +320,7 @@ aside {
     left: 0;
 }
 */
-.post-date {
+.post-intro-date {
     margin-right: 10px;
     position: relative;
 }
@@ -339,16 +339,16 @@ aside {
 }
 */
 
-.post-category {
+.post-intro-category {
     position: relative;
 }
 
-.post-category a:link, .post-category a:visited, .post-category a:active, .post-category a:focus {
+.post-intro-category a:link, .post-intro-category a:visited, .post-intro-category a:active, .post-intro-category a:focus {
     color: #a09e9e;
     text-decoration: underline;
 }
 
-.post-category a:hover {
+.post-intro-category a:hover {
     text-decoration: none;
 }
 
@@ -385,9 +385,14 @@ aside {
 }
 */
 
-.post-intro {
-    font-size: 1.8rem;
-    line-height: 2.8rem;
+.post {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.post-title {
+    margin: 0 0 3rem 0;
 }
 
 /* Biography */
