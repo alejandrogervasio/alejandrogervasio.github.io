@@ -60,8 +60,13 @@ a:hover {
     text-decoration: none
 }
 
+/* Emphasized text */
+b, em {
+    font-weight: 500;
+}
+
 /* Responsive images */
-.responsive-img {
+.responsive-image {
     height: auto;
     max-width: 100%;
 }
@@ -105,7 +110,7 @@ nav ul.main-navigation li a:active,
 nav ul.main-navigation li a:focus {
     color: #fff;
     display: block;
-    font-weight: 400;
+    font-weight: 500;
     padding: 10px 0 10px 0;
     text-decoration: none;
 }
@@ -296,7 +301,7 @@ aside {
     margin-right: 10px;
 }
 
-.post-intro-author, post-author {
+.post-intro-author, .post-author {
     margin-right: 10px
 }
 
