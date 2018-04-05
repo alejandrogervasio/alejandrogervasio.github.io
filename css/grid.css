@@ -1,3 +1,8 @@
+/* Change the default box model */
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
 /* Grid rows */
 .row {
 
