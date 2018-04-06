@@ -71,17 +71,30 @@
                             </div>
                             <h3>Introduction</h3>
                             <p>Getting started programming in Java doesn&apos;t take very long, and it's pretty easy to learn even for beginners, regardless of whether we already have a strong background on object-oriented programming, 
-                                or just want to learn the paradigm’s key concepts with minimal footprint.</p>
-                            <p>To demonstrate the veracity of my claim, let’s see how to develop from the ground up a naive application that displays in the console the classic <i>&quot;Hello World&quot;</i> message.</p>
+                                or just want to learn the paradigm’s key concepts with a minimal footprint.</p>
+                            <p>To demonstrate the veracity of this claim, let’s see how to develop from the ground up a naive application that displays in the console the classic <i>&quot;Hello World&quot;</i> message.</p>
                             <h3>The &quot;HelloWorld&quot; Class</h3>
                             <p>To accomplish this without relying on any IDE in particular, launch your preferred text editor, e.g. NotePad on Windows or Text Edit on Mac, and type the following code:</p>
-                            <pre><code class="java">public class HelloWorld {
+                            <pre><code class="java post-code">public class HelloWorld {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }
 }
 </code></pre>
+                            <p>Now, save the snippet as <i>&quot;HelloWorld.java&quot;</i>  in the location of your choice in your computer.
+                               This is required, of course, as every source file in Java needs to have the <i>&quot;.java&quot;</i> extension appended to the name, so it can be compiled and executed later on, assuming that the code doesn&apos;t contain errors.
+                            </p>
+                            <h3>The Example, Step by Step</h3> 
+                            <p>The above example is contrived, sure, but it shows in a nutshell how to create a simple Java program. Nevertheless, it’s necessary to analyze in detail each part so we can understand the role that plays each one of them:
+                            <ol>
+                                <li>We defined the <i>&quot;HelloWorld&quot;</i> class as a public Java class by using the <i>public</i> access modifier and the <i>class</i> keyword, which means that the class can be accessed with no restrictions by any other class.
+                                </li>
+                                <li>The <i>main</i> method is, in this case, the only method implemented by the class, and also the entry point of all the Java applications. As we did when we defined the class, we used the <i>public</i> access modifier to declare the method public and the <i>void</i> keyword to specify that it doesn&apos;t return a value.
+                                </li>
+                                <li>The <i>System.out.println("Hello World!")</i> line just prints to the console the <i>&quot;Hello World&quot;</i> text and ends with a <i>newline</i> character.</li>
+
+                            </ol>
                         </article>
                     </section>
                 </div>
