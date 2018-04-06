@@ -65,6 +65,13 @@ b, em {
     font-weight: 500;
 }
 
+/* Lists */
+ol {
+    list-style: decimal inside;
+    margin: 0;
+    padding: 0;
+}
+
 /* Responsive images */
 .responsive-image {
     height: auto;
@@ -409,6 +416,10 @@ aside {
     left: 0;
 }
 */
+
+.post-code {
+    margin: 0 0 3rem 0;
+}
 
 /* Biography */
 .biography-img {
