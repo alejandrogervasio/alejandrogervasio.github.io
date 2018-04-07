@@ -71,9 +71,26 @@ a:hover {
 
 /* Lists */
 ol {
-    list-style: decimal inside;
-    margin: 0;
+    counter-reset: item;
+    margin: 0 0 2rem 0;
     padding: 0;
+}
+
+ol > li {
+   margin: 0 0 2rem 0;
+   padding: 0 0 0 2rem;
+   text-indent: -2rem;
+   list-style-type: none;
+   counter-increment: item;
+}
+
+ol > li:before {
+   display: inline-block;
+   width: 1em;
+   padding-right: 0.5em;
+   font-weight: bold;
+   text-align: right;
+   content: counter(item) ".";
 }
 
 /* Code */
