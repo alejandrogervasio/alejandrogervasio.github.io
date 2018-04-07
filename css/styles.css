@@ -6,13 +6,13 @@ html {
 /* Body */
 body {
     color: #000;
-    font: normal 300 1.8rem/2.8rem 'Roboto', Arial, sans-serif;
+    font: normal 400 1.8rem/3rem 'Libre Franklin', Arial, sans-serif;
 }
 
 /* Heading elements */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    margin: 0 0 2rem 0;
+    margin: 0 0 1rem 0;
 }
 
 h1 {
@@ -52,7 +52,7 @@ p {
 
 /* Links */
 a:link, a:visited, a:active, a:focus {
-    color: #006abe;
+    color: #009cff;
     text-decoration: underline;
 }
 
@@ -62,7 +62,7 @@ a:hover {
 
 /* Emphasized text */
 .bold {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .italicized {
@@ -95,7 +95,7 @@ ol > li:before {
 
 /* Code */
 code {
-    font: normal 400 1.8rem/2.8rem 'Roboto Mono', monospace;
+    font: normal 400 1.8rem/2.8rem 'Cutive Mono', monospace;
     margin: 0 0 3rem 0;
 }
 
@@ -479,7 +479,8 @@ ul.featured-posts li {
 .featured-post-title a:visited, 
 .featured-post-title a:active, 
 .featured-post-title a:focus {
-    color: #006abe;
+    color: #009cff;
+    font-weight: 500;
     text-decoration: none
 }
 
@@ -524,8 +525,8 @@ ul.categories li {
 .categories a:visited, 
 .categories a:active, 
 .categories a:focus {
-    color: #006abe;
-    font-weight: 400;
+    color: #009cff;
+    font-weight: 500;
     text-decoration: none;
 }
 
