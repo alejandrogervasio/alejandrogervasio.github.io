@@ -6,7 +6,7 @@ html {
 /* Body */
 body {
     color: #000;
-    font: normal 300 1.8rem/2.8rem 'Roboto', Arial, serif;
+    font: normal 300 1.8rem/2.8rem 'Roboto', Arial, sans-serif;
 }
 
 /* Heading elements */
@@ -61,8 +61,12 @@ a:hover {
 }
 
 /* Emphasized text */
-b, em {
+.bold {
     font-weight: 500;
+}
+
+.italicized {
+    font-style: italic;
 }
 
 /* Lists */
@@ -70,6 +74,12 @@ ol {
     list-style: decimal inside;
     margin: 0;
     padding: 0;
+}
+
+/* Code */
+code {
+    font: normal 400 1.8rem/2.8rem 'Roboto Mono', monospace;
+    margin: 0 0 3rem 0;
 }
 
 /* Responsive images */
@@ -268,8 +278,15 @@ aside {
     margin-bottom: 40px;
 }
 
-.post-intro-title, .post-title {
-    font-weight: 900;
+.post-intro-title {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    margin: 0 0 3rem 0;
+}
+
+.post-title {
+    font-size: 4rem;
+    line-height: 5rem;
     margin: 0 0 3rem 0;
 }
 
@@ -417,12 +434,8 @@ aside {
 }
 */
 
-.post-code {
-    margin: 0 0 3rem 0;
-}
-
 /* Biography */
-.biography-img {
+.biography-image {
     margin-bottom: 2rem;
 }
 
