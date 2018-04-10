@@ -84,8 +84,8 @@ public class HelloWorld {
     }
 }
                             </code></pre>
-                            <p>Now, save the snippet as <span class="italicized">&quot;HelloWorld.java&quot;</span> in the location of your choice on your computer.
-                                This is required, of course, as <span class="bold">every source file in Java needs to have the &quot;.java&quot; extension appended to its name</span>, so it can be compiled and executed later on, assuming that the file doesn&apos;t contain any errors.
+                            <p>Now, save the snippet as &quot;HelloWorld.java&quot; in the location of your choice on your computer.
+                                This is required, of course, as <span class="bold">every source file in Java must have the &quot;.java&quot; extension appended to its name</span>, so it can be compiled and executed later on, assuming that the file doesn&apos;t contain any errors.
                             </p>
                             <h3>The Class Implementation, Step by Step</h3> 
                             <p>The above example is contrived, sure, but it shows in a nutshell how to create a basic Java program. Nevertheless, let&apos;s break it down in several parts, so we can understand the role that plays each one of them:
@@ -100,7 +100,8 @@ public class HelloWorld {
                             </ol>
                             <h3>Compiling the Class: The &quot;javac&quot; Command</h3>
                             <p>At this stage, the &quot;HelloWorld.java&quot; file is just a plain text file with a fancy extension. To make it an executable Java file, we need to compile it.</p>
-                            <p>To do so, open a shell prompt (of course this varies based on your operating system) and type the following:</p>
+                            <p><span class="bold">Compiling a file means basically converting it to a machine-readable version (in Java, the compiled code is called byte code</span>), which has the <span class="italicized">.class</span> extension.</p>
+                            <p>To do so, open a shell prompt or terminal (of course this varies based on your operating system) and type the following:</p>
                             <pre><code class="bash">
 javac &lt;path/to/HelloWorld.java&gt; HelloWorld.java
                             </code></pre>
