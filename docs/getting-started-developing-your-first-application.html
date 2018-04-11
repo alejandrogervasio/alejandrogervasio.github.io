@@ -98,12 +98,19 @@ public class HelloWorld {
                                 <li>The <span class="italicized">main</span> method&apos;s parameter <code>String[] args</code>: an array of strings, which can be used as command line arguments.</li>
                                 <li>The <code>System.out.println("Hello World!")</code> line just prints out to the console the <i>&quot;Hello World&quot;</i> text and appends a <i>newline</i> character at the end.</li>
                             </ol>
-                            <h3>Compiling the Class: The &quot;javac&quot; Command</h3>
+                            <h3>Compiling the Class with the &quot;javac&quot; Command</h3>
                             <p>At this stage, the &quot;HelloWorld.java&quot; file is just a plain text file with a fancy extension. To make it an executable Java file, we need to compile it.</p>
                             <p><span class="bold">Compiling a file means basically converting it to a machine-readable version (in Java, the compiled code is called byte code</span>), which has the <span class="italicized">.class</span> extension.</p>
                             <p>To do so, open a shell prompt or terminal (of course this varies based on your operating system) and type the following:</p>
                             <pre><code class="bash">
 javac &lt;path/to/HelloWorld.java&gt; HelloWorld.java
+                            </code></pre>
+                            <p>Assuming that no compile-time errors were triggered during the compiling phase, a new file called &quot;HelloWorld.class&quot; should have 
+                            been created in the same location of &quot;HelloWorld.java&quot;.</p>
+                            <p>Of course, this file contains the byte code version of the &quot;HelloWorld&quot; class, and therefore can be executed.
+                            <h3>Running the Application with the &quot;java&quot; Command</h3>
+                            <pre><code class="bash">
+java &lt;path/to/HelloWorld.class&gt; HelloWorld
                             </code></pre>
                         </article>
                     </section>
