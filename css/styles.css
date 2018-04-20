@@ -52,12 +52,14 @@ p {
 
 /* Links */
 a:link, a:visited, a:active, a:focus {
-    color: #3ec9d2;
+    color: #33b6bf;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid #33b6bf;
+    color: #33b6bf; 
+   padding-bottom: 2px;
 }
 
 /* Emphasized text */
@@ -113,7 +115,12 @@ code {
 
 /* Logo */
 .logo {
+    
+}
 
+a.logo:hover {
+    border: none;
+    padding-bottom: 0;
 }
 
 /* Navbar */
@@ -133,24 +140,26 @@ nav ul.main-navigation {
     }
 }
 
-nav ul.main-navigation li {
+nav ul.main-navigation > li {
     float: left;
     margin-right: 20px;
 }
 
-nav ul.main-navigation li a:link, 
-nav ul.main-navigation li a:visited, 
-nav ul.main-navigation li a:active, 
-nav ul.main-navigation li a:focus {
+nav ul.main-navigation > li > a:link, 
+nav ul.main-navigation > li > a:visited, 
+nav ul.main-navigation > li > a:active, 
+nav ul.main-navigation > li > a:focus {
     color: #fff;
     display: block;
-    font-weight: 500;
+    font-weight: 400;
     padding: 10px 0 10px 0;
     text-decoration: none;
 }
 
-nav ul.main-navigation li a:hover {
-    color: #00ccff;
+nav ul.main-navigation > li > a:hover {
+    border: none;
+    color: #eee;
+    padding-bottom: 0;
 }
 
 nav ul.social-media-navigation {
@@ -172,6 +181,8 @@ nav ul.social-media-navigation li {
 
 .squared-icon-bw:hover {
     background-position-x: -64px;
+    border: none;
+    padding-bottom: 0;
 }
 
 .squared-twitter-icon-bw {
@@ -311,13 +322,13 @@ aside {
 .post-intro-title a:visited, 
 .post-intro-title a:active, 
 .post-intro-title a:focus {
-    color: #000;
-    text-decoration: none;
-    transition: 0.3s;
+    color: #33b6bf;
 }
 
 .post-intro-title a:hover {
-    text-decoration: underline;
+    border: none;
+    color: #33b6bf;
+    padding-bottom: 0;
 }
 
 .post-intro-meta, .post-meta {
@@ -354,13 +365,12 @@ aside {
 .post-author a:visited, 
 .post-author a:active, 
 .post-author a:focus {
-    color: #a09e9e;
-    text-decoration: underline;
+    
 }
 
 .post-intro-author a:hover, 
 .post-author a:hover {
-    text-decoration: none;
+    
 }
 
 /*
@@ -410,12 +420,11 @@ aside {
 .post-category a:visited, 
 .post-category a:active, 
 .post-category a:focus {
-    color: #a09e9e;
-    text-decoration: underline;
+    
 }
 
 .post-intro-category a:hover, .post-category a:hover {
-    text-decoration: none;
+    
 }
 
 /*
@@ -479,12 +488,13 @@ ul.featured-posts > li {
 .featured-post-title a:visited, 
 .featured-post-title a:active, 
 .featured-post-title a:focus {
-    color: #3ec9d2;
-    text-decoration: none
+    
 }
 
 .featured-post-title a:hover {
-    text-decoration: underline;
+    border: none;
+    color: #33b6bf;
+    padding-bottom: 0;
 }
 
 .featured-post-date {
@@ -501,8 +511,7 @@ ul.featured-posts > li {
 .featured-post-category a:visited, 
 .featured-post-category a:active, 
 .featured-post-category a:focus {
-    color: #a09e9e;
-    text-decoration: underline;
+    
 }
 
 .featured-post-category a:hover {
@@ -525,13 +534,12 @@ ul.categories > li {
 .categories a:visited, 
 .categories a:active, 
 .categories a:focus {
-    color: #3ec9d2;
     font-weight: 500;
-    text-decoration: none;
 }
 
 .categories a:hover {
-    text-decoration: underline;
+    border: none;
+    padding-bottom: 0;
 }
 
 /* Footer */
@@ -581,7 +589,8 @@ footer ul.social-media-navigation > li {
 
 /* Buttons */
 .btn {
-    background: #3ec9d2 !important;
+    background: #33b6bf !important;
+    border: none !important;
     border-radius: 4px;
     color: #fff !important;
     display: inline-table;
@@ -589,7 +598,7 @@ footer ul.social-media-navigation > li {
     font-size: 1.6rem !important;
     font-weight: 400 !important;
     line-height: 2.6rem;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 10px 20px !important;
     text-decoration: none !important;
     text-transform: uppercase !important;
 }
