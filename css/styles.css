@@ -125,7 +125,7 @@ a.logo:hover {
 
 /* Navbar */
 nav {
-    background: #279aa1;
+    background: #5b9096;
     padding: 30px 0;
 }
 
@@ -173,32 +173,32 @@ nav ul.social-media-navigation li {
 }
 
 /* Social icons */
-.squared-icon-bw {
+.squared-icon-green {
     display: inline-table;
     width: 64px;
     height: 64px;
 }
 
-.squared-icon-bw:hover {
+.squared-icon-green:hover {
     background-position-x: -64px;
     border: none;
     padding-bottom: 0;
 }
 
-.squared-twitter-icon-bw {
-    background: transparent url("../images/twitter-icon-squared-bw.png") 0 0 no-repeat;
+.squared-twitter-icon-green {
+    background: transparent url("../images/twitter-icon-squared-green.png") 0 0 no-repeat;
 }
 
-.squared-facebook-icon-bw {
-    background: transparent url("../images/facebook-icon-squared-bw.png") 0 0 no-repeat;
+.squared-facebook-icon-green {
+    background: transparent url("../images/facebook-icon-squared-green.png") 0 0 no-repeat;
 }
 
-.squared-linkedin-icon-bw {
-    background: transparent url("../images/linkedin-icon-squared-bw.png") 0 0 no-repeat;
+.squared-linkedin-icon-green {
+    background: transparent url("../images/linkedin-icon-squared-green.png") 0 0 no-repeat;
 }
 
-.squared-github-icon-bw {
-    background: transparent url("../images/github-icon-squared-bw.png") 0 0 no-repeat;
+.squared-github-icon-green {
+    background: transparent url("../images/github-icon-squared-green.png") 0 0 no-repeat;
 }
 
 .squared-icon {
@@ -544,7 +544,7 @@ ul.categories > li {
 
 /* Footer */
 footer {
-    background: #279aa1;
+    background: #658e98;
     padding: 60px 0 40px 0;
 }
 
