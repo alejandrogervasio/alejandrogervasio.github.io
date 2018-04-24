@@ -77,19 +77,19 @@ application.html&t=Getting%20Started:%20Developing%20your%20First%20Java%20Appli
                                 <span class="post-category">Under <a href="#">Java SE</a></span>
                             </div>
                             <h3>Introduction</h3>
-                            <p>Take my word for it: getting started programming in Java doesn&apos;t take very long, and it&apos;s pretty easy to learn even for beginners, regardless of whether you already have a strong background on object-oriented programming, or just want to learn the paradigm&apos;s key concepts with minimal footprint.</p>
+                            <p>Take my word for it: getting started programming in Java doesn&apos;t take very long, and it&apos;s pretty easy to learn even for beginners, regardless of whether we already have a strong background on object-oriented programming, or just want to learn the paradigm&apos;s key concepts with minimal footprint.</p>
                             <p>To get the ball rolling, let&apos;s create a naive application that displays in the console the classic &quot;Hello World&quot; message.</p>
-                            <p>One last caveat before we get started: <span class="bold">you already must have Java installed on our computer</span>. If you haven&apos;t done it yet, please check the <a href="https://www.java.com/en/download/help/download_options.xml">official documentation</a> on how to install Java on your operating system.</p>
+                            <p>One last caveat before we get started: <span class="bold">we already should have Java installed on our computer</span>. If that&apos;s not the case, please check the <a href="https://www.java.com/en/download/help/download_options.xml">official documentation</a> on how to install Java on your operating system.</p>
                             <h3>Defining the &quot;HelloWorld&quot; Class</h3>
-                            <p>We&apos;ll develop the application without relying on any IDE in particular, so launch your preferred text editor, e.g. NotePad on Windows or Text Edit on Mac, and write the following code:</p>
+                            <p>We&apos;ll develop the application without relying on any IDE in particular, so let&apos;s launch our preferred text editor, e.g. NotePad on Windows or Text Edit on Mac, and write the following code:</p>
                             <pre><code class="java">public class HelloWorld {
                             
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Hello World!");o
     }
 }
 </code></pre>
-                            <p>Now, save the snippet as &quot;HelloWorld.java&quot; in the location of your choice on the computer.</p>
+                            <p>Now, let&apos;s save the snippet as &quot;HelloWorld.java&quot; in the location of our choice on the computer.</p>
                             <p>This is required, of course, as <span class="bold">the name of every source file in Java must match the name of its public class and must end with the &quot;.java&quot; extension</span>, so it can be compiled and executed later on, assuming that the file doesn&apos;t contain errors.</p>                                
                             <h3>The Class Implementation, Step by Step</h3> 
                             <p>The above example is contrived, but it shows in a nutshell how to create a basic Java program. Nevertheless, let&apos;s break it down in several parts, so we can understand the role that plays each one of them:
@@ -105,7 +105,7 @@ application.html&t=Getting%20Started:%20Developing%20your%20First%20Java%20Appli
                             <h3>Compiling the &quot;HelloWorld.java&quot; File</h3>
                             <p>At this stage, &quot;HelloWorld.java&quot; is just a plain text file with a fancy extension. To turn it into an executable Java file, though, first we need to compile it.</p>
                             <p><span class="bold">Compiling a file means basically converting it to a machine-readable version</span>. In Java, <span class="bold">the compiled code is called byte code</span>, and a compiled file has the .class extension.</p>
-                            <p>To compile &quot;HelloWorld.java&quot;, open a shell prompt or terminal (of course this varies according to your operating system) and type the <span class="italicized">&quot;javac&quot;</span> command, followed by the file name (<span class="bold">please notice that the .java extension is required</span>):</p>
+                            <p>To compile &quot;HelloWorld.java&quot;, let&apos;s open a shell prompt or terminal (of course this varies according to the operating system) and type the <span class="italicized">&quot;javac&quot;</span> command, followed by the file name (<span class="bold">please notice that the .java extension is required</span>):</p>
                             <pre><code class="bash">
 javac &lt;path/to/HelloWorld.java&gt; HelloWorld.java
                             </code></pre>
@@ -113,15 +113,15 @@ javac &lt;path/to/HelloWorld.java&gt; HelloWorld.java
                                 been created in the same location of &quot;HelloWorld.java&quot;.</p>
                             <p>This file contains the compiled version of the class, hence it can be executed.
                             <h3>Running the Executable File</h3>
-                            <p>This is where the real fun begins! To run the executable .class file, type the <span class="italicized">&quot;java&quot;</span> command, followed by the file name (<span class="bold">unlike the &quot;javac&quot; command, the .class extension must not be included</span>):</p>
+                            <p>This is where the real fun begins! To run the executable .class file, let&apos;s type the <span class="italicized">&quot;java&quot;</span> command, followed by the file name (<span class="bold">unlike the &quot;javac&quot; command, the .class extension must not be included</span>):</p>
                             <pre><code class="bash">
 java &lt;path/to/HelloWorld.class&gt; HelloWorld
                             </code></pre>
-                            <p>If all goes well, you should see the &quot;Hello World!&quot; message printed out to the console:</p>
+                            <p>If all goes well, we should see the &quot;Hello World!&quot; message printed out to the console:</p>
                             <pre><code class="bash">
 Hello World!
                             </code></pre>
-                            <p>Feel free to pat yourself on the back! You&apos;ve developed your first Java application.</p>
+                            <p>Let&apos;s pat ourselves on the back! We&apos;ve developed our first Java application.</p>
                             <h3>Refactoring the Example</h3>
                             <p>Of course, there&apos;s plenty of room to tweak the example and generate different slants of it. For instance, we could
                                 refactor the <span class="italicized">main</span> method, so it can output to the console a command line argument entered when running the executable file:</p>
@@ -129,7 +129,7 @@ Hello World!
     System.out.println(args[0] + " says Hello World!");
 }
 </code></pre>
-                            <p>In this case, compile the source file as usual and execute it passing one single command line argument:</p>
+                            <p>In this case, we should compile the source file as usual and execute it passing one single command line argument:</p>
                             <pre><code class="bash">
 java &lt;path/to/HelloWorld.class&gt; HelloWorld Mary
                             </code></pre>
@@ -138,7 +138,7 @@ java &lt;path/to/HelloWorld.class&gt; HelloWorld Mary
 Mary says Hello World!
                             </code></pre>
                             <p>While this may seem irrelevant, the refactored version of the class uses an important data structure of Java: <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html" target="_blank">arrays.</a></p>
-                            <p>For now, however, don&apos;t get ahead of yourself and just keep focused on just practicing all what you&apos;ve learned so far. It&apos;s a lot of ground to cover, trust me.</p>
+                            <p>For now, let&apos;s no get ahead of ourselves and keep focused on just practicing all what we&apos;ve learned so far. It&apos;s a lot of ground to cover, trust me.</p>
                             <h3>Conclusion</h3>
                             <p>In this article, we learned how to develop a basic Java application by using just a text editor and a shell prompt. <span class="bold">No unnecessary IDE-centric complexities were added to the development process</span>.</p>
                             <p>There are countless examples all around the web that show how to do nearly the same (and even with more options), so that&apos;s why I decided to keep this post short and straight to the point.</p>
