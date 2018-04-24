@@ -89,7 +89,7 @@ application.html&t=Getting%20Started:%20Developing%20your%20First%20Java%20Appli
     }
 }
 </code></pre>
-                            <p>Now, let&apos;s save the snippet as &quot;HelloWorld.java&quot; in the location of our choice.</p>
+                            <p>Now, the snippet should be saved as &quot;HelloWorld.java&quot; in the location of our choice.</p>
                             <p>This is required, of course, as <span class="bold">the name of every source file in Java must match the name of its public class and must end with the &quot;.java&quot; extension</span>, so it can be compiled and executed later on, assuming that the file doesn&apos;t contain errors.</p>                                
                             <h3>The Class Implementation, Step by Step</h3> 
                             <p>The above example is contrived, but it shows in a nutshell how to create a basic Java program. Nevertheless, let&apos;s break it down in several parts, so we can understand the role that plays each one of them:
@@ -105,7 +105,7 @@ application.html&t=Getting%20Started:%20Developing%20your%20First%20Java%20Appli
                             <h3>Compiling the &quot;HelloWorld.java&quot; File</h3>
                             <p>At this stage, &quot;HelloWorld.java&quot; is just a plain text file with a fancy extension. To turn it into an executable Java file, though, first we need to compile it.</p>
                             <p><span class="bold">Compiling a file means basically converting it to a machine-readable version</span>. In Java, <span class="bold">the compiled code is called byte code</span>, and a compiled file has the .class extension.</p>
-                            <p>To compile &quot;HelloWorld.java&quot;, let&apos;s open a shell prompt or terminal (of course this varies according to the operating system) and type the <span class="italicized">&quot;javac&quot;</span> command, followed by the name of the file (<span class="bold">please notice that the .java extension is required</span>):</p>
+                            <p>To compile &quot;HelloWorld.java&quot;, let&apos;s open a shell prompt or terminal (of course this varies according to the operating system) and type the <span class="italicized">&quot;javac&quot;</span> command, followed by the name of the source file (<span class="bold">please notice that the .java extension is required</span>):</p>
                             <pre><code class="bash">
 javac &lt;path/to/HelloWorld.java&gt; HelloWorld.java
                             </code></pre>
@@ -113,7 +113,7 @@ javac &lt;path/to/HelloWorld.java&gt; HelloWorld.java
                                 been created in the same location of &quot;HelloWorld.java&quot;.</p>
                             <p>This file contains the compiled version of the class, hence it can be executed.
                             <h3>Running the Executable File</h3>
-                            <p>This is where the real fun begins! To run the executable .class file, let&apos;s type the <span class="italicized">&quot;java&quot;</span> command, followed by the name of the file (<span class="bold">unlike the &quot;javac&quot; command, the .class extension must not be included</span>):</p>
+                            <p>This is where the real fun begins! To run the executable .class file, let&apos;s type the <span class="italicized">&quot;java&quot;</span> command, followed by the name of the compiled file (<span class="bold">unlike the &quot;javac&quot; command, the .class extension must not be included</span>):</p>
                             <pre><code class="bash">
 java &lt;path/to/HelloWorld.class&gt; HelloWorld
                             </code></pre>
