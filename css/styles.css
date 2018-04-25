@@ -6,11 +6,12 @@ html {
 /* Body */
 body {
     color: #000;
-    font: normal 300 2rem/3rem 'Libre Franklin', Arial, sans-serif;
+    font: normal 400 2rem/3rem 'Lora', Arial, sans-serif;
 }
 
 /* Heading elements */
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     margin: 3rem 0 1rem 0;
 }
@@ -52,13 +53,12 @@ p {
 
 /* Links */
 a:link, a:visited, a:active, a:focus {
-    color: #279aa1;
+    color: #6da9eb;
     text-decoration: none;
 }
 
 a:hover {
-    border-bottom: 1px solid #33b6bf;
-    color: #33b6bf; 
+    border-bottom: 1px solid #6da9eb;
     padding-bottom: 2px;
 }
 
@@ -125,7 +125,7 @@ a.logo:hover {
 
 /* Navbar */
 nav {
-    background: #5b9096;
+    background: #204a84;
     padding: 30px 0;
 }
 
@@ -322,12 +322,11 @@ aside {
 .post-intro-title a:visited, 
 .post-intro-title a:active, 
 .post-intro-title a:focus {
-    color: #279aa1;
+    color: #000;
 }
 
 .post-intro-title a:hover {
     border: none;
-    color: #33b6bf;
     padding-bottom: 0;
 }
 
@@ -478,9 +477,7 @@ ul.featured-posts > li {
 }
 
 .featured-post-title {
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 2.6rem;
+    font: normal 700 2rem/3rem 'Lora', Arial, serif;
     margin: 0 0 1rem 0;
 }
 
@@ -488,22 +485,22 @@ ul.featured-posts > li {
 .featured-post-title a:visited, 
 .featured-post-title a:active, 
 .featured-post-title a:focus {
-    
+    color: #000;
 }
 
 .featured-post-title a:hover {
     border: none;
-    color: #33b6bf;
     padding-bottom: 0;
 }
 
 .featured-post-date {
     color: #a09e9e;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .featured-post-category {
-    font-size: 1.6rem;
+    color: #a09e9e;
+    font-size: 1.8rem;
     margin-left: 10px;
 }
 
@@ -534,7 +531,7 @@ ul.categories > li {
 .categories a:visited, 
 .categories a:active, 
 .categories a:focus {
-    font-weight: 500;
+    color: #000;
 }
 
 .categories a:hover {
@@ -544,7 +541,7 @@ ul.categories > li {
 
 /* Footer */
 footer {
-    background: #658e98;
+    background: #204a84;
     padding: 60px 0 40px 0;
 }
 
@@ -589,7 +586,7 @@ footer ul.social-media-navigation > li {
 
 /* Buttons */
 .btn {
-    background: #279aa1 !important;
+    background: #204a84 !important;
     border: none !important;
     border-radius: 2px;
     color: #fff !important;
@@ -604,5 +601,5 @@ footer ul.social-media-navigation > li {
 }
 
 .btn:hover {
-    background: #33b6bf !important;
+    background: #000 !important;
 }
