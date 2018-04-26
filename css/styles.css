@@ -6,11 +6,12 @@ html {
 /* Body */
 body {
     color: #000;
-    font: normal 300 2rem/3rem 'Roboto', Arial, sans-serif;
+    font: normal 300 2rem/3rem 'Libre Franklin', Arial, sans-serif;
 }
 
 /* Heading elements */
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', Arial, sans-serif;
     font-weight: 700;
     margin: 3rem 0 1rem 0;
 }
@@ -63,7 +64,7 @@ a:hover {
 
 /* Emphasized text */
 .bold {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .italicized {
@@ -130,12 +131,12 @@ nav {
 
 nav ul.main-navigation {
     list-style: none;
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 @media only screen and (min-width: 1200px) {
     nav ul.main-navigation {
-        margin: 15px 0 0 50px;
+        margin: 20px 0 0 50px;
     }
 }
 
@@ -149,10 +150,8 @@ nav ul.main-navigation > li > a:visited,
 nav ul.main-navigation > li > a:active, 
 nav ul.main-navigation > li > a:focus {
     color: #fff;
-    display: block;
     font-weight: 400;
     padding: 10px 0 10px 0;
-    text-decoration: none;
 }
 
 nav ul.main-navigation > li > a:hover {
@@ -163,8 +162,14 @@ nav ul.main-navigation > li > a:hover {
 
 nav ul.social-media-navigation {
     list-style: none;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
     overflow: hidden;
+}
+
+@media only screen and (min-width: 1200px) {
+    nav ul.social-media-navigation {
+        margin: 8px 0 0 20px;
+    }
 }
 
 nav ul.social-media-navigation li {
@@ -351,7 +356,7 @@ aside {
 }
 
 .post-intro-author, .post-author {
-    color: #a09e9e;
+    color: #666;
     margin-right: 10px
 }
 
@@ -388,7 +393,7 @@ aside {
 }
 
 .post-intro-date, .post-date {
-    color: #a09e9e;
+    color: #666;
     margin-right: 10px;
     position: relative;
 }
@@ -408,7 +413,7 @@ aside {
 */
 
 .post-intro-category, .post-category {
-    color: #a09e9e;
+    color: #666;
     position: relative;
 }
 
@@ -488,7 +493,7 @@ ul.featured-posts > li {
 .featured-post-title a:visited, 
 .featured-post-title a:active, 
 .featured-post-title a:focus {
-    color: #000;
+    
 }
 
 .featured-post-title a:hover {
@@ -497,12 +502,12 @@ ul.featured-posts > li {
 }
 
 .featured-post-date {
-    color: #a09e9e;
+    color: #666;
     font-size: 1.8rem;
 }
 
 .featured-post-category {
-    color: #a09e9e;
+    color: #666;
     font-size: 1.8rem;
     margin-left: 10px;
 }
@@ -515,7 +520,7 @@ ul.featured-posts > li {
 }
 
 .featured-post-category a:hover {
-    text-decoration: none;
+    
 }
 
 /* Categories */
@@ -527,17 +532,14 @@ ul.categories {
 ul.categories > li {
     border-bottom: 1px dotted #eee;
     padding: 5px 0 10px 0;
-    margin: 0 0 1rem 0;
+    margin: 0 0 10px 0;
 }
 
 .categories a:link, 
 .categories a:visited, 
 .categories a:active, 
 .categories a:focus {
-    color: #000;
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 2.8rem;
+    font: normal 500 2rem/3rem 'Roboto', Arial, sans-serif;
 }
 
 .categories a:hover {
@@ -561,13 +563,14 @@ footer ul.copyrightinfo > li {
     color: #fff;
     float: left;
     font-weight: 400;
-    margin-right: 15px;
+    line-height: 2.8rem;
+    margin: 20px 15px 0;
     padding-right: 20px;
 }
 
 @media only screen and (min-width: 1200px) {
     footer ul.copyrightinfo > li {
-        line-height: 1.8rem;
+        margin: 0 15px 0;
     }
 }
 
