@@ -6,13 +6,13 @@ html {
 /* Body */
 body {
     color: #000;
-    font: normal 400 2rem/3rem 'Lora', Arial, serif;
+    font: normal 400 1.8rem/3rem 'Libre Franklin', Arial, serif;
 }
 
 /* Heading elements */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-weight: 700;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 500;
     margin: 3rem 0 1rem 0;
 }
 
@@ -53,7 +53,7 @@ p {
 
 /* Links */
 a:link, a:visited, a:active, a:focus {
-    color: #3ec9d0;
+    color: #016ca2;
     text-decoration: none;
 }
 
@@ -150,9 +150,7 @@ nav ul.main-navigation > li > a:visited,
 nav ul.main-navigation > li > a:active, 
 nav ul.main-navigation > li > a:focus {
     color: #fff;
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 1.6rem;
-    font-weight: 600;
+    font: normal 500 1.6rem/1.6rem 'Roboto', Arial, sans-serif;
     padding: 10px 0 10px 0;
     text-transform: uppercase;
 }
@@ -244,13 +242,13 @@ section {
 }
 
 .section-title {
-    border-bottom: 1px solid #000;
+    border-top: 1px solid #eee;
     color: #000;
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 2.6rem;
-    margin: 0 0 2rem 0;
-    padding-bottom: 1rem;
+    margin: 0 0 3rem 0;
+    padding-top: 8px;
     text-transform: uppercase;
 }
 
@@ -320,6 +318,7 @@ aside {
 
 .post-title {
     font-size: 4rem;
+    font-weight: 700;
     line-height: 5rem;
     margin: 0 0 3rem 0;
 }
@@ -328,7 +327,8 @@ aside {
 .post-intro-title a:visited, 
 .post-intro-title a:active, 
 .post-intro-title a:focus {
-    color: #000;
+    color: #016ca2;
+    font-weight: 700;
 }
 
 .post-intro-title a:hover {
@@ -359,7 +359,7 @@ aside {
 
 .post-intro-author, .post-author {
     color: #999;
-    margin-right: 10px
+    margin-right: 10px;
 }
 
 .post-intro-author a:link, 
@@ -400,6 +400,9 @@ aside {
     position: relative;
 }
 
+.post-intro-description {
+    margin-left: 20px;
+}
 /*
 .post-date:before {
     color: #000;
@@ -486,8 +489,8 @@ ul.featured-posts > li {
 
 .featured-post-title {
     font-size: 2rem;
-    font-weight: 600;
-    line-height: 2.8rem;
+    font-weight: 500;
+    line-height: 2.6rem;
     margin: 0 0 1rem 0;
 }
 
@@ -505,12 +508,12 @@ ul.featured-posts > li {
 
 .featured-post-date {
     color: #999;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .featured-post-category {
     color: #999;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-left: 10px;
 }
 
@@ -541,7 +544,7 @@ ul.categories > li {
 .categories a:visited, 
 .categories a:active, 
 .categories a:focus {
-    font: normal 600 2rem/3rem 'Open Sans', Arial, sans-serif;
+    font: normal 500 2rem/3rem 'Roboto', Arial, sans-serif;
 }
 
 .categories a:hover {
