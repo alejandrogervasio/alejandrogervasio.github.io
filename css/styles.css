@@ -242,13 +242,13 @@ section {
 }
 
 .section-title {
-    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
     color: #000;
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 2.6rem;
     margin: 0 0 3rem 0;
-    padding-top: 8px;
+    padding-bottom: 8px;
     text-transform: uppercase;
 }
 
@@ -337,11 +337,12 @@ aside {
 }
 
 .post-intro-meta, .post-meta {
+    border-bottom: 1px solid #eee;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.6rem;
-    padding: 20px 0 10px 0;
-    margin: 0 0 2rem 0;
+    padding: 20px 0 20px 0;
+    margin: 0 0 3rem 0;
 }
 
 .post-intro-meta ul.social-media-navigation, 
