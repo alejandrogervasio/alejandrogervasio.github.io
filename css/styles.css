@@ -6,7 +6,7 @@ html {
 /* Body */
 body {
     color: #000;
-    font: normal 400 1.8rem/3rem 'Libre Franklin', Arial, serif;
+    font: normal 300 2rem/3rem 'Roboto', Arial, serif;
 }
 
 /* Heading elements */
@@ -64,7 +64,7 @@ a:hover {
 
 /* Emphasized text */
 .bold {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .italicized {
