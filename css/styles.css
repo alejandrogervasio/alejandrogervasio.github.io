@@ -6,13 +6,12 @@ html {
 /* Body */
 body {
     color: #000;
-    font: normal 300 2rem/3rem 'Roboto', Arial, serif;
+    font: normal 300 2rem/3rem 'Roboto', Arial, sans-serif;
 }
 
 /* Heading elements */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', Arial, sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     margin: 3rem 0 1rem 0;
 }
 
@@ -73,6 +72,7 @@ a:hover {
 
 /* Lists */
 ol {
+    list-style: none;
     counter-reset: item;
     margin: 0 0 2rem 0;
     padding: 0;
@@ -80,19 +80,18 @@ ol {
 
 ol > li {
    margin: 0 0 2rem 0;
-   padding: 0 0 0 2rem;
+   padding: 0 2rem;
    text-indent: -2rem;
-   list-style-type: none;
    counter-increment: item;
 }
 
 ol > li:before {
+   content: counter(item) "."; 
    display: inline-block;
-   width: 1em;
-   padding-right: 0.5em;
    font-weight: bold;
+   padding-right: 0.5em;
    text-align: right;
-   content: counter(item) ".";
+   width: 1em;
 }
 
 /* Code */
@@ -150,7 +149,9 @@ nav ul.main-navigation > li > a:visited,
 nav ul.main-navigation > li > a:active, 
 nav ul.main-navigation > li > a:focus {
     color: #fff;
-    font: normal 500 1.6rem/1.6rem 'Roboto', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
     padding: 10px 0 10px 0;
     text-transform: uppercase;
 }
@@ -163,7 +164,7 @@ nav ul.main-navigation > li > a:hover {
 
 nav ul.social-media-navigation {
     list-style: none;
-    margin: 10px 0 0 0;
+    margin: 10px 0;
     overflow: hidden;
 }
 
@@ -178,62 +179,62 @@ nav ul.social-media-navigation li {
 }
 
 /* Social icons */
-.squared-icon-social-navigation {
+.squared-icon-white {
     display: inline-table;
     width: 64px;
     height: 64px;
 }
 
-.squared-icon-social-navigation:hover {
+.squared-icon-white:hover {
     background-position-x: -64px;
     border: none;
     padding-bottom: 0;
 }
 
-.squared-twitter-icon-social-navigation {
-    background: transparent url("../images/twitter-icon-squared-blue.png") 0 0 no-repeat;
+.squared-twitter-icon-white {
+    background: transparent url("../images/twitter-icon-squared-white.png") 0 0 no-repeat;
 }
 
-.squared-facebook-icon-social-navigation {
-    background: transparent url("../images/facebook-icon-squared-blue.png") 0 0 no-repeat;
+.squared-facebook-icon-white {
+    background: transparent url("../images/facebook-icon-squared-white.png") 0 0 no-repeat;
 }
 
-.squared-linkedin-icon-social-navigation {
-    background: transparent url("../images/linkedin-icon-squared-blue.png") 0 0 no-repeat;
+.squared-linkedin-icon-white {
+    background: transparent url("../images/linkedin-icon-squared-white.png") 0 0 no-repeat;
 }
 
-.squared-github-icon-social-navigation {
-    background: transparent url("../images/github-icon-squared-blue.png") 0 0 no-repeat;
+.squared-github-icon-white {
+    background: transparent url("../images/github-icon-squared-white.png") 0 0 no-repeat;
 }
 
-.squared-icon {
+.squared-icon-color {
     display: inline-table;
-    width: 48px;
     height: 48px;
+    width: 48px;
 }
 
-.squared-icon:hover {
+.squared-icon-color:hover {
     background-position-x: -48px;
 }
 
-.squared-twitter-icon {
-    background: transparent url("../images/twitter-icon-squared.png") 0 0 no-repeat;
+.squared-twitter-icon-color {
+    background: transparent url("../images/twitter-icon-squared-color.png") 0 0 no-repeat;
 }
 
-.squared-facebook-icon {
-    background: transparent url("../images/facebook-icon-squared.png") 0 0 no-repeat;
+.squared-facebook-icon-color {
+    background: transparent url("../images/facebook-icon-squared-color.png") 0 0 no-repeat;
 }
 
-.squared-linkedin-icon {
-    background: transparent url("../images/linkedin-icon-squared.png") 0 0 no-repeat;
+.squared-linkedin-icon-color {
+    background: transparent url("../images/linkedin-icon-squared-color.png") 0 0 no-repeat;
 }
 
-.squared-googleplus-icon {
-    background: transparent url("../images/googleplus-icon-squared.png") 0 0 no-repeat;
+.squared-googleplus-icon-color {
+    background: transparent url("../images/googleplus-icon-squared-color.png") 0 0 no-repeat;
 }
 
-.squared-github-icon {
-    background: transparent url("../images/github-icon-squared.png") 0 0 no-repeat;
+.squared-github-icon-color {
+    background: transparent url("../images/github-icon-squared-color.png") 0 0 no-repeat;
 }
 
 /* Sections */
@@ -247,7 +248,7 @@ section {
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 2.6rem;
-    margin: 0 0 3rem 0;
+    margin: 0 0 2rem 0;
     padding-bottom: 8px;
     text-transform: uppercase;
 }
@@ -318,7 +319,6 @@ aside {
 
 .post-title {
     font-size: 4rem;
-    font-weight: 700;
     line-height: 5rem;
     margin: 0 0 3rem 0;
 }
@@ -328,7 +328,6 @@ aside {
 .post-intro-title a:active, 
 .post-intro-title a:focus {
     color: #016ca2;
-    font-weight: 700;
 }
 
 .post-intro-title a:hover {
@@ -402,8 +401,15 @@ aside {
 }
 
 .post-intro-description {
-    margin-left: 20px;
+    margin-left: 0;
 }
+
+@media only screen and (min-width: 1200px) {
+    .post-intro-description {
+        margin-left: 20px;
+    }
+}
+
 /*
 .post-date:before {
     color: #000;
