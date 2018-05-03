@@ -215,6 +215,8 @@ nav ul.social-media-navigation li {
 
 .squared-icon-color:hover {
     background-position-x: -48px;
+    border: none;
+    padding-bottom: 0;
 }
 
 .squared-twitter-icon-color {
