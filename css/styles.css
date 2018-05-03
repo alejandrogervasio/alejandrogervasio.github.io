@@ -52,13 +52,13 @@ p {
 
 /* Links */
 a:link, a:visited, a:active, a:focus {
-    color: #016ca2;
+    color: #2e64e6;
     text-decoration: none;
 }
 
 a:hover {
-    border-bottom: 1px solid #6da9eb;
     padding-bottom: 2px;
+    border-bottom: 1px solid #2e64e6;
 }
 
 /* Emphasized text */
@@ -316,34 +316,37 @@ aside {
 .post-intro-title {
     font-size: 3.5rem;
     line-height: 4.5rem;
-    margin: 0 0 3rem 0;
+    margin: 0 0 2rem 0;
 }
 
 .post-title {
     font-size: 4rem;
     line-height: 5rem;
-    margin: 0 0 3rem 0;
+    margin: 0 0 2rem 0;
 }
 
 .post-intro-title a:link,
 .post-intro-title a:visited, 
 .post-intro-title a:active, 
 .post-intro-title a:focus {
-    color: #016ca2;
+    color: #000;
 }
 
 .post-intro-title a:hover {
     border: none;
+    color: #2e64e6;
     padding-bottom: 0;
+    text-decoration: none;
 }
 
 .post-intro-meta, .post-meta {
     border-bottom: 1px solid #eee;
-    font-size: 1.8rem;
-    font-weight: 400;
+    font-size: 1.4rem;
+    font-weight: 500;
     line-height: 2.6rem;
     padding: 20px 0 20px 0;
     margin: 0 0 3rem 0;
+    text-transform: uppercase;
 }
 
 .post-intro-meta ul.social-media-navigation, 
@@ -507,10 +510,11 @@ ul.featured-posts > li {
 .featured-post-title a:visited, 
 .featured-post-title a:active, 
 .featured-post-title a:focus {
-    
+    color: #000;
 }
 
 .featured-post-title a:hover {
+    color: #2e64e6;
     border: none;
     padding-bottom: 0;
 }
@@ -553,10 +557,12 @@ ul.categories > li {
 .categories a:visited, 
 .categories a:active, 
 .categories a:focus {
+    color: #000;
     font: normal 500 2rem/3rem 'Roboto', Arial, sans-serif;
 }
 
 .categories a:hover {
+    color: #2e64e6;
     border: none;
     padding-bottom: 0;
 }
