@@ -97,18 +97,18 @@ application.html&t=Getting%20Started:%20Developing%20your%20First%20Java%20Appli
                             <h3>The Class Implementation, Step by Step</h3> 
                             <p>The above example is contrived, but it shows in a nutshell how to create a basic Java program. Even though, let&apos;s break it down in several parts, so we can understand the role that plays each one of them:
                             <ol>
-                                <li>The <span class="italicized">HelloWorld</span> class: it&apos;s declared a public class by using the <span class="italicized">public</span> access modifier and the <span class="italicized">class</span> keyword, <span class="bold-text">which means that the class can be accessed with no restrictions by any other class</span>.
+                                <li>The <span class="italicized-text">HelloWorld</span> class: it&apos;s declared a public class by using the <span class="italicized-text">public</span> access modifier and the <span class="italicized-text">class</span> keyword, <span class="bold-text">which means that the class can be accessed with no restrictions by any other class</span>.
                                 </li>
-                                <li>The <span class="italicized">main</span> method: the only method implemented by the class, and also the <span class="bold-text">application&apos;s entry point</span>. The method is declared static by using the <span class="italicized">static</span> keyword, so there&apos;s no need to instantiate the class to call it.
-                                    As we did before with the class, the <span class="italicized">public</span> access modifier declares the method public and the <span class="italicized">void</span> keyword specifies that it doesn&apos;t return a value.
+                                <li>The <span class="italicized-text">main</span> method: the only method implemented by the class, and also the <span class="bold-text">application&apos;s entry point</span>. The method is declared static by using the <span class="italicized-text">static</span> keyword, so there&apos;s no need to instantiate the class to call it.
+                                    As we did before with the class, the <span class="italicized-text">public</span> access modifier declares the method public and the <span class="italicized-text">void</span> keyword specifies that it doesn&apos;t return a value.
                                 </li>
-                                <li>The <span class="italicized">main</span> method&apos;s parameter <code>String[] args</code>: an array of strings, which can be used as command line arguments.</li>
+                                <li>The <span class="italicized-text">main</span> method&apos;s parameter <code>String[] args</code>: an array of strings, which can be used as command line arguments.</li>
                                 <li>The <code>System.out.println("Hello World!")</code> line: just prints out to the console the &quot;Hello World&quot; text and appends a new line at the end.</li>
                             </ol>
                             <h3>Compiling the &quot;HelloWorld.java&quot; File</h3>
                             <p>At this stage, &quot;HelloWorld.java&quot; is just a plain text file with a fancy extension. To turn it into an executable Java file, though, first we need to compile it.</p>
                             <p><span class="bold-text">Compiling a file means basically converting it to a machine-readable version</span>. In Java, <span class="bold-text">the compiled code is called byte code</span>, and <span class="bold-text">a compiled file has the .class extension</span>.</p>
-                            <p>To compile the &quot;HelloWorld.java&quot; file, let&apos;s open a shell prompt or terminal (of course this varies according to the operating system) and type the <span class="italicized">javac</span> command, followed by the name of the source file (<span class="bold-text">please notice that the .java extension is required</span>):</p>
+                            <p>To compile the &quot;HelloWorld.java&quot; file, let&apos;s open a shell prompt or terminal (of course this varies according to the operating system) and type the <span class="italicized-text">javac</span> command, followed by the name of the source file (<span class="bold-text">please notice that the .java extension is required</span>):</p>
                             <pre><code class="bash">
 javac &lt;path/to/HelloWorld.java&gt; HelloWorld.java
                             </code></pre>
@@ -116,7 +116,7 @@ javac &lt;path/to/HelloWorld.java&gt; HelloWorld.java
                                 been created in the same location of &quot;HelloWorld.java&quot;.</p>
                             <p>This file contains the compiled version of the class, hence it can be executed.
                             <h3>Running the Executable File</h3>
-                            <p>This is where the real fun begins! To run the executable .class file, let&apos;s type the <span class="italicized">java</span> command, followed by the name of the compiled file (<span class="bold-text">unlike the &quot;javac&quot; command, the .class extension must not be included</span>):</p>
+                            <p>This is where the real fun begins! To run the executable .class file, let&apos;s type the <span class="italicized-text">java</span> command, followed by the name of the compiled file (<span class="bold-text">unlike the &quot;javac&quot; command, the .class extension must not be included</span>):</p>
                             <pre><code class="bash">
 java &lt;path/to/HelloWorld.class&gt; HelloWorld
                             </code></pre>
@@ -127,7 +127,7 @@ Hello World!
                             <p>Let&apos;s pat ourselves on the back! We&apos;ve developed our first Java application.</p>
                             <h3>Refactoring the &quot;main&quot; Method</h3>
                             <p>Of course, there&apos;s plenty of room to tweak the example and generate different slants of it. For instance, we could
-                                refactor the <span class="italicized">main</span> method, so it can output to the console a command line argument entered when running the executable file:</p>
+                                refactor the <span class="italicized-text">main</span> method, so it can output to the console a command line argument entered when running the executable file:</p>
                             <pre><code class="java">public static void main(String[] args) {
     System.out.println(args[0] + " says Hello World!");
 }
