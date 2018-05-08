@@ -11,7 +11,6 @@ body {
 
 /* Heading elements */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Condensed', Arial, sans-serif;
     font-weight: 700;
     margin: 3rem 0 1rem 0;
 }
@@ -159,8 +158,8 @@ nav ul.main-navigation > li > a:visited,
 nav ul.main-navigation > li > a:active, 
 nav ul.main-navigation > li > a:focus {
     color: #fff;
-    font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
     line-height: 2.8rem;
     padding: 10px 0 10px 0;
     /*text-transform: uppercase;*/
@@ -357,10 +356,8 @@ aside {
 }
 
 .post-intro-meta, .post-meta {
-    font: normal 400 1.6rem/2.6rem 'Roboto Condensed', Arial, sans-serif; 
     padding: 10px 0 20px 0;
     margin: 0 0 1rem 0;
-    text-transform: uppercase;
 }
 
 .post-intro-meta ul.social-media-navigation, 
@@ -515,9 +512,7 @@ ul.featured-posts > li {
 }
 
 .featured-post-title {
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 2.6rem;
+    font: normal 700 1.8rem/2.6rem 'Roboto', Arial, sans-serif;
     margin: 0 0 1rem 0;
 }
 
@@ -535,12 +530,12 @@ ul.featured-posts > li {
 
 .featured-post-date {
     color: #999;
-    font: normal 400 1.6rem/2.8rem 'Roboto Condensed', Arial, sans-serif;
+    font-size: 1.6rem;
 }
 
 .featured-post-category {
     color: #999;
-    font: normal 400 1.6rem/2.8rem 'Roboto Condensed', Arial, sans-serif;
+    font-size: 1.6rem;
     margin-left: 10px;
 }
 
@@ -572,7 +567,7 @@ ul.categories > li {
 .categories a:active, 
 .categories a:focus {
     color: #000;
-    font: normal 400 2rem/2.8rem 'Roboto Condensed', Arial, sans-serif;
+    font-weight: 700;
 }
 
 .categories a:hover {
