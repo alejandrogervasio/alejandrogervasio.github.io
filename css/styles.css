@@ -6,11 +6,12 @@ html {
 /* Body */
 body {
     color: #000;
-    font: normal 400 1.8rem/3rem 'Roboto', Arial, sans-serif;
+    font: normal 400 1.8rem/3rem 'Libre Franklin', Arial, sans-serif;
 }
 
 /* Heading elements */
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', Arial, sans-serif;
     font-weight: 700;
     margin: 3rem 0 1rem 0;
 }
@@ -52,7 +53,7 @@ p {
 
 /* Links */
 a:link, a:visited, a:active, a:focus {
-    color: #4285f4;
+    color: #0086b3;
     text-decoration: none;
 }
 
@@ -158,11 +159,9 @@ nav ul.main-navigation > li > a:visited,
 nav ul.main-navigation > li > a:active, 
 nav ul.main-navigation > li > a:focus {
     color: #fff;
-    font-size: 1.8rem;
-    font-weight: 500;
+    font: normal 400 2rem/2.8rem 'Roboto', Arial, sans-serif;
     line-height: 2.8rem;
     padding: 10px 0 10px 0;
-    /*text-transform: uppercase;*/
 }
 
 nav ul.main-navigation > li > a:hover {
@@ -259,15 +258,13 @@ section {
 }
 
 .section-title {
-    background: #fff;
+    border-bottom: 2px solid #eee;
     color: #000;
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 2.6rem;
-    padding: 0 20px 0 0;
-    position: absolute;
-    top: -45px;
-    left: 0;
+    padding: 0 0 10px 0;
+    margin: 0 0 3rem 0;
     text-transform: uppercase;
 }
 
@@ -330,14 +327,14 @@ aside {
 }
 
 .post-intro-title {
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
     margin: 0 0 2rem 0;
 }
 
 .post-title {
-    font-size: 4.5rem;
-    line-height: 5.5rem;
+    font-size: 4rem;
+    line-height: 5rem;
     margin: 0 0 2rem 0;
 }
 
@@ -345,12 +342,11 @@ aside {
 .post-intro-title a:visited, 
 .post-intro-title a:active, 
 .post-intro-title a:focus {
-    color: #000;
+    color: #0086b3;
 }
 
 .post-intro-title a:hover {
     border: none;
-    color: #2e64e6;
     padding-bottom: 0;
     text-decoration: none;
 }
@@ -496,7 +492,8 @@ aside {
 
 /* Biography */
 .biography-image {
-    margin-bottom: 2rem;
+    float: left;
+    margin: 2rem;
 }
 
 /* Featured posts */
@@ -512,7 +509,9 @@ ul.featured-posts > li {
 }
 
 .featured-post-title {
-    font: normal 700 1.8rem/2.6rem 'Roboto', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.8rem;
     margin: 0 0 1rem 0;
 }
 
@@ -520,7 +519,7 @@ ul.featured-posts > li {
 .featured-post-title a:visited, 
 .featured-post-title a:active, 
 .featured-post-title a:focus {
-    color: #000;
+    color: #0086b3;
 }
 
 .featured-post-title a:hover {
@@ -566,8 +565,9 @@ ul.categories > li {
 .categories a:visited, 
 .categories a:active, 
 .categories a:focus {
-    color: #000;
-    font-weight: 700;
+    color: #0086b3;
+    font: normal 700 2rem/2.8rem 'Roboto', Arial, sans-serif;
+    line-height: 2.8rem;
 }
 
 .categories a:hover {
