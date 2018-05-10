@@ -5,6 +5,7 @@ html {
 
 /* Body */
 body {
+    background: #999;
     color: #000;
     font: normal 400 1.8rem/3rem 'Libre Franklin', Arial, sans-serif;
 }
@@ -119,7 +120,7 @@ code {
 /* Container (centers wrapped elements) */
 .container {
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
 }
 
 /* Logo */
@@ -298,37 +299,37 @@ section {
 
 /* Main content */
 .main-content {
-    padding: 80px 0 40px 0;
+    padding: 80px 0 40px 40px;
 }
 
 @media only screen and (min-width: 1200px) {
     .main-content {
         border-right: 1px solid #eee;
-        padding: 80px 40px 40px 0;
+        padding: 80px 40px 40px 40px;
     }
 }
 
 /* Aside */
 aside {
-    padding: 0;
+    padding: 0 40px 0;
 }
 
 @media only screen and (min-width: 1200px) {
     aside {
-        padding: 80px 0 40px 40px;
+        padding: 80px 20px 40px 40px;
     }
 }
 
 /* Posts */
 .post-intro, .post {
     border-bottom: 1px solid #eee;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     margin-bottom: 40px;
 }
 
 .post-intro-title {
-    font-size: 3.2rem;
-    line-height: 4.2rem;
+    font-size: 3rem;
+    line-height: 4rem;
     margin: 0 0 2rem 0;
 }
 
@@ -352,6 +353,7 @@ aside {
 }
 
 .post-intro-meta, .post-meta {
+    font-size: 1.6rem;
     padding: 10px 0 20px 0;
     margin: 0 0 1rem 0;
 }
@@ -413,7 +415,7 @@ aside {
 }
 
 .post-intro-description {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-left: 0;
 }
 
@@ -496,6 +498,11 @@ aside {
     margin: 2rem;
 }
 
+.biography-text {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
 /* Featured posts */
 ul.featured-posts {
     list-style: none;
@@ -509,8 +516,8 @@ ul.featured-posts > li {
 }
 
 .featured-post-title {
-    font-weight: 700;
-    font-size: 2rem;
+    font-weight: 500;
+    font-size: 1.8rem;
     line-height: 2.8rem;
     margin: 0 0 1rem 0;
 }
@@ -566,7 +573,7 @@ ul.categories > li {
 .categories a:active, 
 .categories a:focus {
     color: #0086b3;
-    font: normal 700 2rem/2.8rem 'Roboto', Arial, sans-serif;
+    font: normal 500 1.8rem/2.8rem 'Roboto', Arial, sans-serif;
     line-height: 2.8rem;
 }
 
@@ -578,7 +585,7 @@ ul.categories > li {
 /* Footer */
 footer {
     background: #000;
-    padding: 60px 0 40px 0;
+    padding: 60px 20px 40px 20px;
 }
 
 footer ul.copyrightinfo {
@@ -640,4 +647,9 @@ footer ul.social-media-navigation > li {
 
 .btn:hover {
     background: #000 !important;
+}
+
+/* Color classes */
+.white {
+    background: #fff;
 }
