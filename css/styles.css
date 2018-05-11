@@ -12,7 +12,7 @@ body {
 
 /* Heading elements */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
     font-weight: 700;
     margin: 3rem 0 1rem 0;
 }
@@ -328,8 +328,8 @@ aside {
 }
 
 .post-intro-title {
-    font-size: 3rem;
-    line-height: 4rem;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
     margin: 0 0 2rem 0;
 }
 
@@ -343,11 +343,12 @@ aside {
 .post-intro-title a:visited, 
 .post-intro-title a:active, 
 .post-intro-title a:focus {
-    color: #0086b3;
+    color: #000;
 }
 
 .post-intro-title a:hover {
     border: none;
+    color: #0086b3;
     padding-bottom: 0;
     text-decoration: none;
 }
@@ -415,7 +416,6 @@ aside {
 }
 
 .post-intro-description {
-    font-size: 1.6rem;
     margin-left: 0;
 }
 
@@ -495,7 +495,7 @@ aside {
 /* Biography */
 .biography-image {
     float: left;
-    margin: 2rem;
+    margin-right: 20px;
 }
 
 .biography-text {
@@ -516,8 +516,8 @@ ul.featured-posts > li {
 }
 
 .featured-post-title {
+    font-size: 2rem;
     font-weight: 500;
-    font-size: 1.8rem;
     line-height: 2.8rem;
     margin: 0 0 1rem 0;
 }
@@ -573,8 +573,7 @@ ul.categories > li {
 .categories a:active, 
 .categories a:focus {
     color: #0086b3;
-    font: normal 500 1.8rem/2.8rem 'Roboto', Arial, sans-serif;
-    line-height: 2.8rem;
+    font: normal 500 2rem/2.8rem 'Roboto Condensed', Arial, sans-serif;
 }
 
 .categories a:hover {
@@ -599,9 +598,9 @@ footer ul.copyrightinfo > li {
     float: left;
     font-size: 1.8rem;
     font-weight: 400;
-    line-height: 2.8rem;
+    line-height: 1.8rem;
     margin: 20px 15px 0;
-    padding-right: 20px;
+    padding: 0 20px 0 0;
 }
 
 @media only screen and (min-width: 1200px) {
