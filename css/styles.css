@@ -5,14 +5,14 @@ html {
 
 /* Body */
 body {
-    background: #999;
+    background: #777;
     color: #000;
     font: normal 400 1.8rem/3rem 'Libre Franklin', Arial, sans-serif;
 }
 
 /* Heading elements */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-weight: 700;
     margin: 3rem 0 1rem 0;
 }
@@ -573,7 +573,7 @@ ul.categories > li {
 .categories a:active, 
 .categories a:focus {
     color: #0086b3;
-    font: normal 500 2rem/2.8rem 'Roboto Condensed', Arial, sans-serif;
+    font: normal 500 2rem/2.8rem 'Roboto', Arial, sans-serif;
 }
 
 .categories a:hover {
