@@ -7,13 +7,13 @@ html {
 body {
     background: #777;
     color: #000;
-    font: normal 400 1.8rem/3rem 'Libre Franklin', Arial, sans-serif;
+    font: normal 400 1.8rem/3rem 'Merriweather', Arial, sans-serif;
 }
 
 /* Heading elements */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', Arial, sans-serif;
-    font-weight: 700;
+    font-family: 'Oswald', Arial, sans-serif;
+    font-weight: 500;
     margin: 3rem 0 1rem 0;
 }
 
@@ -160,7 +160,7 @@ nav ul.main-navigation > li > a:visited,
 nav ul.main-navigation > li > a:active, 
 nav ul.main-navigation > li > a:focus {
     color: #fff;
-    font: normal 400 2rem/2.8rem 'Roboto', Arial, sans-serif;
+    font: normal 400 2rem/2.6rem 'Oswald', Arial, sans-serif;
     line-height: 2.8rem;
     padding: 10px 0 10px 0;
 }
@@ -262,7 +262,7 @@ section {
     border-bottom: 2px solid #eee;
     color: #000;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 2.6rem;
     padding: 0 0 10px 0;
     margin: 0 0 3rem 0;
@@ -517,7 +517,7 @@ ul.featured-posts > li {
 
 .featured-post-title {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 2.8rem;
     margin: 0 0 1rem 0;
 }
@@ -573,7 +573,7 @@ ul.categories > li {
 .categories a:active, 
 .categories a:focus {
     color: #0086b3;
-    font: normal 500 2rem/2.8rem 'Roboto', Arial, sans-serif;
+    font: normal 400 2rem/2.8rem 'Oswald', Arial, sans-serif;
 }
 
 .categories a:hover {
