@@ -26,8 +26,8 @@
         <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body>
-        <div class="container">
-            <nav class="row">
+        <nav class="row">
+            <div class="container">
                 <div class="col span_3_of_12">
                     <a href="https://alejandrogervasio.github.io" class="logo"><img src="../images/classbox-logo.png"></a>
                 </div>
@@ -47,8 +47,8 @@
                         <li><a href="https://www.linkedin.com" class="squared-icon-white squared-linkedin-icon-white"></a></li>
                     </ul>
                 </div>
-             </nav>
-        </div>
+            </div>
+         </nav>
         <div class="container white">
             <div class="row">
                 <div class="col span_8_of_12">
@@ -81,12 +81,12 @@ application.html&t=Getting%20Started:%20Developing%20your%20First%20Java%20Appli
                                 <span class="post-date">On March 24, 2018</span>
                                 <span class="post-category">Under <a href="#">Java SE</a></span>
                             </div>
-                            <h3>Introduction</h3>
+                            <h3>1. Introduction</h3>
                             <p>Despite what many people believe, getting started programming in Java doesn't take very long, and it's pretty easy to learn even for beginners.
                             <p>So, no matter if we already have a strong background on object-oriented programming, or just want to learn the paradigm's key concepts with minimal footprint, Java nicely fills the bill.</p>
                             <p>To prove that what I claim is true, let's create a naive application that displays in the console the classic "Hello World &excl;" message.</p>
                             <p><span class="bold-text">One last caveat before we get started: we already should have Java installed on our computer</span>. If that's not the case, please make sure to check the <a href="https://www.java.com/en/download/help/download_options.xml" target="_blank">official documentation</a> on how to do that on your operating system.</p>
-                            <h3>Defining the "HelloWorld" Class</h3>
+                            <h3>2. The "HelloWorld" Class</h3>
                             <p>Since we'll develop the application without relying on any IDE in particular, let's launch our preferred text editor, e.g. NotePad on Windows or Text Edit on Mac, and write the following code:</p>
                             <pre><code class="java">public class HelloWorld {
                             
@@ -97,7 +97,7 @@ application.html&t=Getting%20Started:%20Developing%20your%20First%20Java%20Appli
 </code></pre>
                             <p>Now, let's save the snippet as "HelloWorld.java" in the location of our choice.</p>
                             <p>This is required, of course, as <span class="bold-text">the name of every source file in Java must match the name of its public class and must end with the ".java" extension</span>, so it can be compiled and executed later on, assuming that the file doesn't contain errors.</p>                                
-                            <h3>The Class Implementation, Step by Step</h3> 
+                            <h3>3. The Class Implementation, Step by Step</h3> 
                             <p>The above example is contrived, but it shows in a nutshell how to create a basic Java program. Even though, let's break it down in several parts, so we can understand the role that plays each one of them:
                             <ol>
                                 <li>The <span class="italicized-text">HelloWorld</span> class: it's declared a public class by using the <span class="italicized-text">public</span> access modifier and the <span class="italicized-text">class</span> keyword, <span class="bold-text">which means that the class can be accessed with no restrictions by any other class</span>.
@@ -108,7 +108,7 @@ application.html&t=Getting%20Started:%20Developing%20your%20First%20Java%20Appli
                                 <li>The <span class="italicized-text">main</span> method's parameter <code>String[] args</code>: an array of strings, which can be used as command line arguments.</li>
                                 <li>The <code>System.out.println("Hello World!")</code> line: just prints out to the console the "Hello World" text and appends a new line at the end.</li>
                             </ol>
-                            <h3>Compiling the "HelloWorld.java" File</h3>
+                            <h3>4. Compiling the "HelloWorld.java" File</h3>
                             <p>At this stage, "HelloWorld.java" is just a plain text file with a fancy extension. To turn it into an executable Java file, though, first we need to compile it.</p>
                             <p><span class="bold-text">Compiling a file means basically converting it to a machine-readable version</span>. In Java, <span class="bold-text">the compiled code is called byte code</span>, and <span class="bold-text">a compiled file has the .class extension</span>.</p>
                             <p>To compile the "HelloWorld.java" file, let's open a shell prompt or terminal (of course this varies according to the operating system) and type the <span class="italicized-text">javac</span> command, followed by the name of the source file (<span class="bold-text">please notice that the .java extension is required</span>):</p>
@@ -118,7 +118,7 @@ javac &lt;path/to/HelloWorld.java&gt; HelloWorld.java
                             <p>Assuming that no compile-time errors were found when compiling the file, a new file called "HelloWorld.class" should have 
                                 been created in the same location of "HelloWorld.java".</p>
                             <p>This file contains the compiled version of the class, hence it can be executed.
-                            <h3>Running the Executable File</h3>
+                            <h3>5. Running the Executable File</h3>
                             <p>This is where the real fun begins! To run the executable .class file, let's type the <span class="italicized-text">java</span> command, followed by the name of the compiled file (<span class="bold-text">unlike the "javac" command, the .class extension must not be included</span>):</p>
                             <pre><code class="bash">
 java &lt;path/to/HelloWorld.class&gt; HelloWorld
@@ -127,7 +127,7 @@ java &lt;path/to/HelloWorld.class&gt; HelloWorld
                             <pre><code class="bash">
 Hello World!
                             </code></pre>
-                            <h3>Refactoring the "main" Method</h3>
+                            <h3>6. Further Improvements</h3>
                             <p>Of course, there's plenty of room to tweak the example and generate different slants of it. For instance, we could
                                 refactor the <span class="italicized-text">main</span> method, so it can output to the console a command line argument entered when running the executable file:</p>
                             <pre><code class="java">public static void main(String[] args) {
@@ -144,7 +144,7 @@ Mary says Hello World!
                             </code></pre>
                             <p>While this may seem irrelevant, the refactored version of the class uses an important data structure of Java: <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html" target="_blank">arrays.</a></p>
                             <p>For now, let's not get ahead of ourselves and just keep focused on practicing all we've learned so far. It's a lot of ground to cover, trust me.</p>
-                            <h3>Conclusion</h3>
+                            <h3>7. Conclusion</h3>
                             <p>In this article, we learned how to develop a basic Java application by using just a text editor and a shell prompt. <span class="bold-text">No unnecessary IDE-centric complexities were added to the development process</span>.</p>
                             <p>All the code samples shown in this tutorial can be found on GitHub.</p>
                         </article>
