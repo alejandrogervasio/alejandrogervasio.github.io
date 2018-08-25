@@ -1,0 +1,16 @@
+body {
+    background: #fff;
+}
+
+article {
+    border-bottom: 1px solid #eee;
+    padding: 50px 0 50px 0;
+}
+
+.post-meta {
+    padding: 10px 0 10px 0;
+}
+
+.post-icon {
+    margin-right: 20px;
+}
