@@ -2,6 +2,10 @@ body {
     background: #fff;
 }
 
+.main-header {
+    background: #000 url("../images/man-working-on-his-laptop.jpg") center no-repeat;
+}
+
 article {
     border-bottom: 1px solid #eee;
     padding: 50px 0 50px 0;
@@ -11,6 +15,7 @@ article {
     padding: 10px 0 10px 0;
 }
 
-.post-icon {
+.post-author, .post-date, .post-category {
     margin-right: 20px;
 }
+
