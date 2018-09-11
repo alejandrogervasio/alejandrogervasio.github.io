@@ -3,7 +3,7 @@ body {
 }
 
 .main-header {
-    background: #000 url("../images/man-working-on-his-laptop.jpg") center no-repeat;
+    background: #000 url("../images/millennial-guy-working-on-his-laptop.jpg") center no-repeat;
 }
 
 article {
@@ -16,5 +16,6 @@ article {
 }
 
 .post-author, .post-date, .post-category {
-    margin-right: 20px;
+    display: inline-block;
+    margin: 0 20px 0 10px;
 }
