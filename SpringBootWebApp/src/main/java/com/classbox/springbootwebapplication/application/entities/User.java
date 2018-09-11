@@ -6,12 +6,12 @@ import javax.validation.constraints.Size;
 
 public class User {
 
-    @NotNull(message = "Name may not be null")
-    @Size(min = 2, max = 30, message = "Name must between 2 and 30 characters")
+    @NotNull(message = "Name is mandatory")
+    @Size(min = 2, max = 30, message = "Name must be between 2 and 30 characters")
     private String name;
-
-    @NotNull(message = "Age may not be null")
-    @Min(18)
+    
+    @NotNull(message = "Age is mandatory")
+    @Min(value = 18, message = "Age must be at least or greater than 18")
     private Integer age;
     
     public User(String name, Integer age) {
@@ -30,7 +30,7 @@ public class User {
     public Integer getAge() {
         return age;
     }
-
+    
     public void setAge(Integer age) {
         this.age = age;
     }
