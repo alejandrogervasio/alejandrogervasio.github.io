@@ -11,15 +11,6 @@ article {
     padding: 60px 0 60px 0;
 }
 
-.post-author, .post-date, .post-category {
-    display: inline-block;
-    margin: 0 10px 0 10px;
-}
-
-.post-social-icons {
-    margin: 0 0 40px 0;
-}
-
 footer {
     color: #fff;
     background: #000;
