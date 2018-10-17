@@ -1,0 +1,23 @@
+.header {
+    background: url(../images/blue-black-digital-binary-technology-hero-header.jpg) center center fixed;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.header:before {
+    content: "";
+    opacity: 0.5;
+    background-color: #3a6da4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.header .inner-container {
+    position: relative;
+    z-index: 100;
+}
