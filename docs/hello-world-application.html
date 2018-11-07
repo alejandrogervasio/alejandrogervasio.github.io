@@ -5,18 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="A fine-tuned Java blog, which covers a broad range of topics, from core programming concepts to advanced ones.">
         <meta name="author" content="Alejandro Gervasio">
-        <title>ClassBox</title>
+        <title>Demystifying &quot;public static void main&quot;: Creating a &ldquo;Hello World&ldquo; Java Application</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/shards.min.css?v=2.1.0">
-        <link rel="stylesheet" href="css/extra-styles.css">
-        <link rel="stylesheet" href="css/prism.css">
+        <link rel="stylesheet" href="../css/shards.min.css?v=2.1.0">
+        <link rel="stylesheet" href="../css/extra-styles.css">
+        <link rel="stylesheet" href="../css/prism.css">
     </head>
     <body>
-        <header class="header">
+        <div class="container-fluid bg-dark">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-dark">
-                    <img src="images/shards-logo.svg" class="mr-2" height="30">
+                    <img src="../images/shards-logo.svg" class="mr-2" height="30">
                     <a class="navbar-brand" href="#">ClassBox</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown-2"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -59,46 +59,79 @@
                             </li>
                         </ul>
                     </div>
-                </nav>   
+                </nav>    
             </div>    
-            <div class="container py-5">
-                <div class="header-inner-container">
-                    <h1 class="display-4 text-white my-5">Serious Java Programming, Made Easy</h1>
-                    <h2 class="lead text-white mb-5">Welcome to ClassBox, a programming blog that makes learning Java a no-brainer.</h2>
-                    <a href="#" class="btn btn-outline-primary">Get Started</a>
-                </div>
-            </div>
-        </header>
+        </div>    
         <div class="container">
             <div class="row">
                 <div class="col-lg-9 col-md-9 col-sm-12 pt-5">
                     <section class="py-5">
-                        <h5 class="mb-4">Latest Posts</h5>
                         <article class="mb-5">
-                            <h2 class="mb-4"><a href="docs/hello-world-application.html" class="text-black">Demystifying &ldquo;public static void main()&rdquo;: Building a &ldquo;Hello World&rdquo; Java Application</a></h2>
+                            <h2 class="mb-4">Demystifying &ldquo;public static void main()&rdquo;: Building a &ldquo;Hello World&rdquo; Java Application</h2>
                             <p class="text-muted">
                                 <i class="fas fa-user mr-1"></i><a href="#">By Alejandro Gervasio</a>
                                 <i class="fas fa-calendar ml-2 mr-2"></i>October 15, 2018
                                 <i class="fas fa-folder-open ml-2 mr-2"></i><a href="#">Java Core</a>
                             </p>
-                            <img src="images/image1.jpg" class="img-fluid">
+                            <h3 class="mt-5">Overview</h3>
                             <p class="mt-4">The Java language is definitively a neat example of the implementation of the <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" target="_blank">OOP</a> (object-oriented programming) paradigm.</p>
                             <p>Moreover, although mastering the paradigm's foundations is in most cases a difficult process, funny enough Java itself is fairly easy to learn.</p>
                             <p class="text-bold">In this introductory article, we'll learn how to develop from scratch a simple Java application that prints out to the console the classic &ldquo;Hello World&rdquo; message.</p>
-                            <a href="docs/hello-world-application.html" class="btn btn-primary">Read More</a>
-                        </article>
-                        <hr>
-                        <article class="mt-5 mb-5">
-                            <h2 class="mb-4"><a href="#" class="text-black">An Introductory Look at Java Strings</a></h2>
-                            <p class="text-muted">
-                                <i class="fas fa-user mr-1"></i>By Alejandro Gervasio
-                                <i class="fas fa-calendar ml-2 mr-2"></i>October 15, 2018
-                                <i class="fas fa-folder-open ml-2 mr-2"></i>Java Core
-                            </p>
-                            <img src="images/image4.jpg" class="img-fluid">
-                            <p class="text-bold mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur mattis ex eget blandit. Ut sollicitudin lobortis faucibus. Vivamus rutrum luctus massa, eget luctus turpis lacinia pharetra. Proin bibendum commodo pharetra. Duis ac malesuada nunc, ac porta diam. Nunc facilisis sollicitudin massa ac condimentum.</p>
-                            <p class="text-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur mattis ex eget blandit. Ut sollicitudin lobortis faucibus. Vivamus rutrum luctus massa, eget luctus turpis lacinia pharetra. Proin bibendum commodo pharetra. Duis ac malesuada nunc, ac porta diam. Nunc facilisis sollicitudin massa ac condimentum.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                            <h3 class="mt-5 mb-4">Defining the <em>&ldquo;HelloWorldApplication&rdquo;</em> Class</h3>
+                            <p>To keep things concise and simple, we'll create our example &ldquo;Hello World&rdquo; application without relying on any IDE in particular.</p> 
+                            <p>Therefore, let’s launch our preferred text editor, (e.g. NotePad on Windows or Text Edit on Mac), and write the following code:</p>
+                            <pre><code class="language-java">public class HelloWorldApplication {
+                            
+     public static void main(String[] args) {
+         System.out.println("Hello World!");
+     }
+ }
+</code></pre>
+                            <p class="mt-4">Now, let's save the code snippet in a file called <em>HelloWorldApplication.java</em>, in the location of our choice in the file system.</p>
+                            <p>While at first sight the example looks rather naive, it actually covers a lot of background.<p> 
+                            <p>Thus, let's break it down in several parts, so we can understand more clearly how it works:</p>
+                            <ul>
+                                <li class="mb-2">We defined the <em>HelloWorldApplication</em> class with the <em>public</em> access modifier preceding the <em>class</em> keyword. This means that the class is public, hence we can access it from anywhere within the application, with no restrictions whatsoever.</li>
+                                <li class="mb-2">The <em>main()</em> method is actually the sample application’s entry point. The <em>public</em> access modifier declares the method public, while that the <em>static</em> keyword implies that there’s no need to instantiate the class to call it. Lastly, the <em>void</em> keyword signals that the method returns no value(s).</li>
+                                <li class="mb-2">The <em>main()</em> method arguments <em>String[] args:</em> an <em>Array</em> of <em>Strings</em>, which we can use for passing command-line arguments to the method.</li>
+                                <li class="mb-2">The <em>System.out.println</em> statement does exactly what we might expect: it prints out to the console the &ldquo;Hello World!&rdquo; text.</li>
+                            </ul>
+                            <h3 class="mt-5 mb-4">Compiling the <em>&ldquo;HelloWorldApplication&rdquo;</em> Class</h3>
+                            <p>At this point, <em>HelloWorldApplication.java</em> is just a plain text file with a fancy extension. To make it an executable Java file, though, first we need to compile it.</p>
+                            <p class="text-bold">Compiling a Java file means basically converting the source code to bytecode, a format which can be interpreted and executed by the <a href="https://en.wikipedia.org/wiki/Java_virtual_machine" target="_blank">JVM</a> (Java Virtual Machine).</p>
+                            <p>Therefore, to compile our source file, let’s open up a command prompt. Next, let’s navigate to the location in the file system where we previously saved the <em>HelloWorldApplication.java</em> file, and type the <em>javac</em> command, followed by the name of the source file:</p>
+                            <pre><code class="language-text">javac HelloWorldApplication.java</code></pre>
+                            <p class="text-bold mt-4">The <em>javac</em> command reads Java classes and interface definitions, and compiles them into bytecode class files. In addition, it can also process annotations in Java source files and classes.</p>
+                            <p>After running the <em>javac</em> command, a new executable <em>HelloWorldApplication.class</em> file should have been created in the same location of <em>HelloWorldApplication.java</em>.</p>
+                            <h3 class="mt-5 mb-4">Running the Executable File</h3>
+                            <p>In this case, if no compilation errors were triggered during the compiling phase, then we can now run the application by typing the <em>java</em> command, followed by the name of the executable file:
+                            <pre><code class="language-java">java HelloWorldApplication</code></pre>
+                            <p class=" text-bold mt-4">The <em>java</em> command runs a Java program from a command prompt. When we invoke the <em>java</em> command, the <a href="https://en.wikipedia.org/wiki/Java_virtual_machine">JRE</a> (Java Runtime Environment) is loaded, along with the supplied class. Finally, the class' <em>main()</em> method is executed.</p>
+                            <p class="mt-4">In this case, the <em>HelloWorldApplication class' main()</em> method will be called. As a result, we should see the &ldquo;Hello World!&rdquo; text printed out in the console:</p>
+                            <pre><code class="language-text">Hello World!</code></pre>
+                            <h3 class="mt-5 mb-4">Further Improvements</h3>
+                            <p>Of course, there's plenty of room to improve the existing functionality of the <em>HelloWorldApplication</em> class.</p>
+                            <p> We could refactor, for instance, the <em>main()</em> method, so it can take one or more command-line arguments and print them out to the console, along with the &ldquo;Hello World!&rdquo; message:</p>
+                            <pre><code class="language-java">public static void main(String[] args) {
+    for (int i = 0; i < args.length; i++) {
+        System.out.println(args[i] + "says Hello World!");
+    }
+ }</code></pre>
+                            <p class="mt-4">As we just did before, we should first recompile the <em>HelloWorldApplication.java</em> file by using the <em>javac</em> command, and then rerun the class file by passing the command-line arguments to the <em>java</em> command:</p>
+                            <pre><code class="language-text">java HelloWorldApplication John Heather Jennifer</code></pre>
+                            <p class="mt-4">As expected, the refactored example will generate the following output:</p>
+                            <pre><code class="language-text">John says Hello World!
+ Heather says Hello World!
+ Jennifer says Hello World!
+</code></pre>
+                            <h3 class="mt-5">Summary</h3>
+                            <p>In this article, we learned how to build from scratch a basic Java application.</p>
+                            <p>We deliberately kept all the examples easy to understand, as we put strong emphasis on learning a few key concepts of the Java language.</p>
+                            <ul>
+                                <li>A class: the de-facto unit of data and behavior in Java, which can maintain internal state through one or multiple fields and implement behavior through a set of methods.</li>
+                                <li>The <em>public</em> access modifier: it's used for declaring the public visibility of class fields and methods.</li>
+                                <li>An array: a dynamically-created container object that holds a fixed number of elements of a single type.</li>
+                            </ul>
                         </article>
                     </section>
                 </div>
@@ -106,7 +139,7 @@
                     <section class="mt-5 mb-5">
                         <h5>Featured Posts</h5>
                         <ul class="list-unstyled">
-                            <li class="mb-2"><a href="#"><strong>Demystifying &quot;public static void main()&quot;: Building a &ldquo;Hello World&ldquo; Java Application</strong></a></li>
+                            <li class="mb-2"><a href="#"><strong>Demystifying &ldquo;public static void main()&rdquo;: Building a &ldquo;Hello World&rdquo; Java Application</strong></a></li>
                             <li class="mb-2"><a href="#"><strong>An Introductory Look at Java Strings</strong></a></li>
                         </ul>
                     </section>    
@@ -139,9 +172,9 @@
                 </div>
             </div>
         </div>
-        <footer>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
-                <div class="container">
+        <footer class="container-fluid bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
                     <a class="navbar-brand" href="#">ClassBox</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -179,15 +212,15 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </footer>
         <script async defer src="https://buttons.github.io/buttons.js"></script>
         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="js/shards.min.js"></script>
-        <script src="js/plugins/prism.js"></script>
+        <script src="../js/shards.min.js"></script>
+        <script src="../js/plugins/prism.js"></script>
     </body>
 </html>

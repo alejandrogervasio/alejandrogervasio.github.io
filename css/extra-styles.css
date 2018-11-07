@@ -1,3 +1,11 @@
+body {
+    font-size: 1.1rem;
+}
+
+code, pre {
+    font-size: 1.1rem;
+}
+
 .header {
     background: url(../images/blue-black-digital-binary-technology-hero-header.jpg) center center fixed;
     position: relative;
@@ -20,4 +28,8 @@
 .header .header-inner-container {
     position: relative;
     z-index: 100;
+}
+
+.text-bold {
+    font-weight: 500;
 }
