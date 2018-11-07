@@ -2,6 +2,30 @@ body {
     font-size: 1.1rem;
 }
 
+h1 {
+    line-height: 2.5rem;
+}
+
+h2 {
+    line-height: 2.8rem;
+}
+
+h3 {
+    line-height: 2.2rem;
+}
+
+h4 {
+    line-height: 2rem;
+}
+
+h5 {
+    line-height: 1.8rem;
+}
+
+h6 {
+    line-height: 1.6rem;
+}
+
 code, pre {
     font-size: 1.1rem;
 }
