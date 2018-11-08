@@ -33,12 +33,12 @@
                                 <a class="nav-link" href="#">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="mailto:alejandro.gervasio@gmail.com">Contact</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="mailto:alejandro.gervasio@gmail.com">
                                     <i class="fas fa-envelope fa-lg"></i>
                                 </a>
                             </li>
@@ -48,12 +48,12 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="https://github.com/alejandrogervasio/">
                                     <i class="fab fa-github fa-lg"></i>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
+                                <a class="nav-link" href="https://www.linkedin.com/in/alejandro-gervasio-710a2643/">
                                     <i class="fab fa-linkedin-in fa-lg"></i>
                                 </a>
                             </li>
@@ -74,7 +74,7 @@
                                 <i class="fas fa-folder-open ml-2 mr-2"></i><a href="#">Java Core</a>
                             </p>
                             <h3 class="mt-5">Overview</h3>
-                            <p class="mt-4">The Java language is a neat example of the implementation of the <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" target="_blank">OOP</a> (object-oriented programming) paradigm. Moreover, although mastering the paradigm's foundations is in most cases a difficult process, funny enough, Java itself is fairly easy to learn.</p>
+                            <p class="mt-4">The Java language is a neat example of the implementation of the <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" target="_blank">OOP</a> (object-oriented programming) paradigm. While it's fair to admit that mastering the paradigm's foundations is in most cases a difficult process, funny enough, Java itself is fairly easy to learn.</p>
                             <p class="text-bold">In this introductory article, we'll learn how to develop from scratch a simple Java application that prints out to the console the classic &ldquo;Hello World&rdquo; message.</p>
                             <h3 class="mt-5 mb-4">Defining the <em>&ldquo;HelloWorldApplication&rdquo;</em> Class</h3>
                             <p>To keep things simple, we'll create our example &ldquo;Hello World&rdquo; application without relying on any IDE in particular.</p> 
@@ -87,9 +87,9 @@
  }
 </code></pre>
                             <p class="mt-4">Now, let's save the code snippet in a file called <em>HelloWorldApplication.java</em>, in the location of our choice in the file system.</p>
-                            <p>While at first sight the example looks rather naive, it actually covers a lot of background. Thus, let's break it down in several parts, so we can understand more clearly how it works:</p>
+                            <p>While at first sight the example looks pretty naive, it actually covers a lot of background. Thus, let's break it down in several parts, so we can understand more clearly how it works:</p>
                             <ul>
-                                <li class="mb-2">The <em>HelloWorldApplication</em> <a href="https://docs.oracle.com/javase/tutorial/java/concepts/class.html" target="_blank">class</a>: it's defined with the <em>public</em> access modifier preceding the <em>class</em> keyword and the class name. This means that the class is public, hence we can access it from anywhere within the application, with no restrictions whatsoever.</li>
+                                <li class="mb-2">The <em>HelloWorldApplication</em> <a href="https://docs.oracle.com/javase/tutorial/java/concepts/class.html" target="_blank">class</a>: we defined it with the <em>public</em> access modifier preceding the <em>class</em> keyword and the class name. This means that the class is public, hence we can access it from anywhere within the application, with no restrictions whatsoever.</li>
                                 <li class="mb-2">The <em>main()</em> method is actually the sample application’s entry point. The <em>public</em> access modifier declares the method public, while that the <em>static</em> keyword implies that there’s no need to instantiate the class to call it. Lastly, the <em>void</em> keyword signals that the method returns no value(s).</li>
                                 <li class="mb-2">The <em>main()</em> method arguments, <em>String[] args:</em> an <em><a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html" target="_blank">array</a></em> of <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html" target="_blank"><em>strings</em></a>, which we can use for passing command-line arguments to the method.</li>
                                 <li class="mb-2">The <em>System.out.println</em> statement does exactly what we might expect: it prints out to the console the &ldquo;Hello World!&rdquo; text.</li>
@@ -102,7 +102,7 @@
                             <p class="text-bold mt-4">The <em>javac</em> command reads Java classes and interface definitions, and compiles them into bytecode class files. In addition, it can also process annotations in Java source files and classes.</p>
                             <p>Once we have run the <em>javac</em> command, a new executable <em>HelloWorldApplication.class</em> file should have been created in the same location of <em>HelloWorldApplication.java</em>.</p>
                             <h3 class="mt-5 mb-4">Running the Executable File</h3>
-                            <p>In this case, if no compilation errors were triggered during the compiling phase, then we can now run the application by typing the <em>java</em> command, followed by the name of the executable file:
+                            <p>Assuming that no compilation errors were triggered during the compiling phase, then we can now run the application by typing the <em>java</em> command, followed by the name of the executable file:
                             <pre><code class="language-java">java HelloWorldApplication</code></pre>
                             <p class=" text-bold mt-4">The <em>java</em> command runs a Java program from a command prompt. When we invoke the <em>java</em> command, the <a href="https://en.wikipedia.org/wiki/Java_virtual_machine">JRE</a> (Java Runtime Environment) is loaded, along with the supplied class. Finally, the class' <em>main()</em> method is executed.</p>
                             <p class="mt-4">In this case, the <em>HelloWorldApplication class' main()</em> method will be called. As a result, we should see the &ldquo;Hello World!&rdquo; text printed out in the console:</p>
@@ -115,7 +115,7 @@
         System.out.println(args[i] + "says Hello World!");
     }
  }</code></pre>
-                            <p class="mt-4">As we just did before, we should first recompile the <em>HelloWorldApplication.java</em> file by using the <em>javac</em> command, and then rerun the class file by passing the command-line arguments to the <em>java</em> command:</p>
+                            <p class="mt-4">Likewise, we should first recompile the <em>HelloWorldApplication.java</em> file by using the <em>javac</em> command, and then rerun the class file by passing the command-line arguments to the <em>java</em> command:</p>
                             <pre><code class="language-text">java HelloWorldApplication John Heather Jennifer</code></pre>
                             <p class="mt-4">As expected, the refactored example will generate the following output:</p>
                             <pre><code class="language-text">John says Hello World!
@@ -124,12 +124,12 @@
 </code></pre>
                             <h3 class="mt-5 mb-4">Summary</h3>
                             <p>In this tutorial, we learned how to build from scratch a basic Java application. We deliberately kept all the examples easy to understand, as we put strong emphasis on learning a few key concepts of the Java language.</p>
-                            <p>Let's make a quick summary of them:</p>
+                            <p>Here's a quick summary of them:</p>
                             <ul>
-                                <li class="mb-2">Class: the de-facto unit of data and behavior in Java, and the blueprint for objects, which can maintain internal state through one or multiple fields and implement behavior via a set of methods.</li>
-                                <li class="mb-2">Method or function: a code block container, which allows us to encapsulate behavior within a certain class.</li>
+                                <li class="mb-2">Class: the de-facto unit of data and behavior in Java, and the blueprint for objects. Objects or class instances can maintain internal state through one or more fields, and implement behavior via one or multiple methods.</li>
                                 <li class="mb-2">The <em>public</em> access modifier: it allows us to declare the public visibility of class fields and methods.</li>
-                                <li class="mb-2">Array: a dynamically-created container object that holds a fixed number of elements of a single type.</li>
+                                <li class="mb-2">Method or function: a code block container, which we can use to encapsulate behavior within a certain class.</li>
+                                <li class="mb-2">Array: a dynamically-created container object that holds a fixed number of elements of the same type.</li>
                             </ul>
                         </article>
                     </section>
@@ -145,9 +145,9 @@
                     <hr>
                     <section class="mt-5 mb-5">
                         <h5>Support this Site</h5>
-                        <p>The old saying will always stand, granted: <strong>content is king</strong>. Of course, producing high-quality Java content and delivering 
-                            it in a reasonable timeline takes time and lots of effort.</p>
-                        <p>Do you like the current content and want to see many other neat Java topics covered in the near future? Then feel free to <a href="mailto:alejandro.gervasio@gmail.com">hire me</a>, or simply make a donation:</p>
+                        <p>As the old saying goes, <span class="text-bold">content is King</span>. Of course, delivering high-quality Java content in a reasonable time line takes time and a lot of effort.</p>
+                        <p>Do you like the current content and want to see many other Java topics covered in the near future?</p>
+                        <p>Then feel free to <a href="mailto:alejandro.gervasio@gmail.com">hire me</a>, or please consider making a donation:</p>
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                             <input type="hidden" name="cmd" value="_s-xclick">
                             <input type="hidden" name="hosted_button_id" value="HVHYY6636WXQA">
@@ -172,7 +172,10 @@
                                 <button type="button" class="btn btn-primary btn-pill">Hibernate</button>
                                 <button type="button" class="btn btn-primary btn-pill">Vavr</button>
                             </li>
-                            <li class="mb-2"><button type="button" class="btn btn-primary btn-pill">Bean Validation</button></li>
+                            <li class="mb-2">
+                                <button type="button" class="btn btn-primary btn-pill">Bean Validation</button>
+                                <button type="button" class="btn btn-primary btn-pill">Java EE</button>
+                            </li>
                         </ul>
                     </section>
                 </div>
